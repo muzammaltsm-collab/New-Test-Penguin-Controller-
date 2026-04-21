@@ -1,0 +1,159 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45c47ca6020e2624ab89ba301ab129e7, type: 3}
+  m_Name: Effect Data
+  m_EditorClassIdentifier: 
+  effectdata:
+  - endSlashData:
+      EndSlash: {fileID: 2100000, guid: d02884936259c264eb3e242897d74f6e, type: 2}
+      GroundCrack: {fileID: 2100000, guid: d8e8115587c001d4cadf37ff7c8d210d, type: 2}
+      Trail: {fileID: 2100000, guid: a964585be922b9b489990f426e90782e, type: 2}
+      Fire: {r: 0.16785331, g: 0.8679245, b: 0.76186055, a: 0.2509804}
+      Sparks: {r: 0.30588233, g: 1, b: 0.98415893, a: 1}
+      Flash: {r: 0.09803921, g: 0.6816365, b: 1, a: 1}
+      Derbis: {r: 0.20784314, g: 0.18431373, b: 0.16470589, a: 1}
+      FlashColor: {r: 0.41960788, g: 0.8543284, b: 1, a: 1}
+      Wind: {r: 0.7411765, g: 1, b: 0.9955273, a: 0.11764706}
+      Leaves: {r: 0.3254902, g: 0.5367833, b: 0.65882355, a: 1}
+      SparksCore: {r: 0.30588233, g: 0.4987121, b: 1, a: 1}
+      Glow: {r: 0, g: 0.21577694, b: 0.34901962, a: 1}
+    slashData:
+      Sparks: {r: 0.07058824, g: 0.34901962, b: 1, a: 1}
+      Hit: {r: 0.25882354, g: 0.3764706, b: 0.6039216, a: 1}
+      FlareEffect: {r: 0.18431373, g: 0.6509804, b: 1, a: 1}
+      SparKsCore: {r: 0.07058824, g: 0.34901962, b: 1, a: 1}
+      FlareMaterial: {fileID: 2100000, guid: 9bcb1bd25372f734fb1a054d13c55af5, type: 2}
+      MainMaterial: {fileID: 2100000, guid: b5f6b85bc5b00e240a916352942cc4b1, type: 2}
+    CharacterColor: {r: 0.25907797, g: 0.33744666, b: 0.7735849, a: 1}
+    CharacterMaxSize: 1
+    EffectStartValue: 0
+    EffectMaxValue: 25
+  - endSlashData:
+      EndSlash: {fileID: 2100000, guid: 580ce236d66101c469681989f92c71da, type: 2}
+      GroundCrack: {fileID: 2100000, guid: 5ed94c3d9c578e444ad9a0e4d5f26e33, type: 2}
+      Trail: {fileID: 2100000, guid: f5d7e70489ade1948ab5582cf3d8c03a, type: 2}
+      Fire: {r: 0.43861228, g: 1, b: 0.2235294, a: 0.2509804}
+      Sparks: {r: 0.38097385, g: 1, b: 0.30588233, a: 1}
+      Flash: {r: 0.09803921, g: 1, b: 0.25788414, a: 1}
+      Derbis: {r: 0.16470589, g: 0.20784314, b: 0.16742055, a: 1}
+      FlashColor: {r: 0.45283484, g: 1, b: 0.41960788, a: 1}
+      Wind: {r: 0.7535649, g: 1, b: 0.7411765, a: 0.11764706}
+      Leaves: {r: 0.3254902, g: 0.65882355, b: 0.32798257, a: 1}
+      SparksCore: {r: 0.3164676, g: 1, b: 0.30588233, a: 1}
+      Glow: {r: 0, g: 0.34901962, b: 0.03902462, a: 1}
+    slashData:
+      Sparks: {r: 0.09019608, g: 0.90588236, b: 0.08235294, a: 1}
+      Hit: {r: 0.05490196, g: 0.58431375, b: 0.047058824, a: 1}
+      FlareEffect: {r: 0.31764707, g: 0.77254903, b: 0.30980393, a: 1}
+      SparKsCore: {r: 0.011764706, g: 0.9529412, b: 0, a: 1}
+      FlareMaterial: {fileID: 2100000, guid: e72edfd61d6753a41b25019b42453fc9, type: 2}
+      MainMaterial: {fileID: 2100000, guid: 8d49a9d020044694a8c47999e3815af0, type: 2}
+    CharacterColor: {r: 0.29842365, g: 0.7830189, b: 0.29178533, a: 1}
+    CharacterMaxSize: 1.1
+    EffectStartValue: 26
+    EffectMaxValue: 50
+  - endSlashData:
+      EndSlash: {fileID: 2100000, guid: 8908bc7132b499948bf19f7f956d4827, type: 2}
+      GroundCrack: {fileID: 2100000, guid: c9528b289b8ab384a960f2afa4d06857, type: 2}
+      Trail: {fileID: 2100000, guid: 25aaa974252dc1344bfd5efd1319c032, type: 2}
+      Fire: {r: 0.9906209, g: 1, b: 0.2235294, a: 0.2509804}
+      Sparks: {r: 1, g: 0.9333315, b: 0.30588233, a: 1}
+      Flash: {r: 1, g: 0.81144094, b: 0.09803921, a: 1}
+      Derbis: {r: 0.20784314, g: 0.20652366, b: 0.16470589, a: 1}
+      FlashColor: {r: 1, g: 0.98116165, b: 0.41960788, a: 1}
+      Wind: {r: 1, g: 0.98834306, b: 0.7411765, a: 0.11764706}
+      Leaves: {r: 0.65882355, g: 0.65116465, b: 0.3254902, a: 1}
+      SparksCore: {r: 1, g: 0.98830336, b: 0.30588233, a: 1}
+      Glow: {r: 0.34901962, g: 0.34797874, b: 0, a: 1}
+    slashData:
+      Sparks: {r: 0.9529412, g: 0.98039216, b: 0, a: 1}
+      Hit: {r: 0.7176471, g: 0.69411767, b: 0.09803922, a: 1}
+      FlareEffect: {r: 0.7058824, g: 0.7019608, b: 0.34509805, a: 1}
+      SparKsCore: {r: 0.94509804, g: 0.90588236, b: 0.047058824, a: 1}
+      FlareMaterial: {fileID: 2100000, guid: 0dd30c5894392ab4e97832a6c59a8d3a, type: 2}
+      MainMaterial: {fileID: 2100000, guid: 8fd07a28f27c4c74a930a334ac593c4a, type: 2}
+    CharacterColor: {r: 0.8867924, g: 0.6745949, b: 0.25516194, a: 1}
+    CharacterMaxSize: 1.2
+    EffectStartValue: 51
+    EffectMaxValue: 75
+  - endSlashData:
+      EndSlash: {fileID: 2100000, guid: 3f9273766cc66194ea4c7a99bc8be8e3, type: 2}
+      GroundCrack: {fileID: 2100000, guid: 78936fdd93b40b84ea10565ceb0dee05, type: 2}
+      Trail: {fileID: 2100000, guid: 1d09374073949b041bad513c90fcc40f, type: 2}
+      Fire: {r: 1, g: 0.68927324, b: 0.2235294, a: 0.2509804}
+      Sparks: {r: 1, g: 0.82067335, b: 0.30588233, a: 1}
+      Flash: {r: 1, g: 0.7567272, b: 0.09803921, a: 1}
+      Derbis: {r: 0.20784314, g: 0.19250052, b: 0.16470589, a: 1}
+      FlashColor: {r: 1, g: 0.7529412, b: 0.41960785, a: 1}
+      Wind: {r: 1, g: 0.91764706, b: 0.7411765, a: 0.11764706}
+      Leaves: {r: 0.65882355, g: 0.5254902, b: 0.3254902, a: 1}
+      SparksCore: {r: 1, g: 0.7490196, b: 0.30588236, a: 1}
+      Glow: {r: 0.34901962, g: 0.1764706, b: 0, a: 1}
+    slashData:
+      Sparks: {r: 1, g: 0.46666667, b: 0.003921569, a: 1}
+      Hit: {r: 0.69803923, g: 0.41960785, b: 0.20784314, a: 1}
+      FlareEffect: {r: 0.8, g: 0.6039216, b: 0.32156864, a: 1}
+      SparKsCore: {r: 0.8784314, g: 0.54901963, b: 0.15294118, a: 1}
+      FlareMaterial: {fileID: 2100000, guid: 42522ac753bae4544a7e50cc1a8b68d9, type: 2}
+      MainMaterial: {fileID: 2100000, guid: aa68bd462537889449e9a069971defc4, type: 2}
+    CharacterColor: {r: 0.8301887, g: 0.4599521, b: 0.17621933, a: 1}
+    CharacterMaxSize: 1.3
+    EffectStartValue: 76
+    EffectMaxValue: 100
+  - endSlashData:
+      EndSlash: {fileID: 2100000, guid: 3fc3c694f61155f48890f8121bcf2156, type: 2}
+      GroundCrack: {fileID: 2100000, guid: 9e554722781674b4eafb3c1befaf08d0, type: 2}
+      Trail: {fileID: 2100000, guid: 14ce71d5e703bd4419d03295649811c3, type: 2}
+      Fire: {r: 1, g: 0.56078434, b: 0.22352941, a: 0.2509804}
+      Sparks: {r: 1, g: 0.7490196, b: 0.30588236, a: 1}
+      Flash: {r: 1, g: 0.3372549, b: 0.09803922, a: 1}
+      Derbis: {r: 0.20784314, g: 0.18431373, b: 0.16470589, a: 1}
+      FlashColor: {r: 1, g: 0.7529412, b: 0.41960785, a: 1}
+      Wind: {r: 1, g: 0.91764706, b: 0.7411765, a: 0.11764706}
+      Leaves: {r: 0.65882355, g: 0.5254902, b: 0.3254902, a: 1}
+      SparksCore: {r: 1, g: 0.7490196, b: 0.30588236, a: 1}
+      Glow: {r: 0.34901962, g: 0.1764706, b: 0, a: 1}
+    slashData:
+      Sparks: {r: 0.9254902, g: 0.05490196, b: 0.05490196, a: 1}
+      Hit: {r: 0.6039216, g: 0.13333334, b: 0.13333334, a: 1}
+      FlareEffect: {r: 0.7921569, g: 0.39215687, b: 0.39215687, a: 1}
+      SparKsCore: {r: 0.90588236, g: 0.09803922, b: 0.09803922, a: 1}
+      FlareMaterial: {fileID: 2100000, guid: a2e49b8c78b3ce446b0672694be0f54d, type: 2}
+      MainMaterial: {fileID: 2100000, guid: 72a0e77478481ea489d2acc5e1ac3518, type: 2}
+    CharacterColor: {r: 0.764151, g: 0.13336597, b: 0.13336597, a: 1}
+    CharacterMaxSize: 1.4
+    EffectStartValue: 101
+    EffectMaxValue: 150
+  - endSlashData:
+      EndSlash: {fileID: 2100000, guid: 352f6ddeee2470a49bc129f33728fd09, type: 2}
+      GroundCrack: {fileID: 2100000, guid: c7e2b7279783f9f469ee611548742ad7, type: 2}
+      Trail: {fileID: 2100000, guid: 2060613def97ec54fa6ae7405147b805, type: 2}
+      Fire: {r: 0.4811321, g: 0.4342359, b: 0.36084908, a: 0.2509804}
+      Sparks: {r: 0.764151, g: 0.7393879, b: 0.6956658, a: 1}
+      Flash: {r: 0.38679248, g: 0.20981668, b: 0.36732724, a: 1}
+      Derbis: {r: 0.2830189, g: 0.24879448, b: 0.22027414, a: 1}
+      FlashColor: {r: 0.3207547, g: 0.23638487, b: 0.122552514, a: 1}
+      Wind: {r: 0.5377358, g: 0.5304722, b: 0.5149074, a: 0.11764706}
+      Leaves: {r: 0.6226415, g: 0.55802774, b: 0.46110716, a: 1}
+      SparksCore: {r: 0.5377358, g: 0.4359323, b: 0.25618547, a: 1}
+      Glow: {r: 0.4245283, g: 0.29087883, b: 0.15419187, a: 1}
+    slashData:
+      Sparks: {r: 0.1792453, g: 0.15979888, b: 0.15979888, a: 1}
+      Hit: {r: 0.32084373, g: 0.3068263, b: 0.3301887, a: 1}
+      FlareEffect: {r: 0.1509434, g: 0.09327163, b: 0.09327163, a: 1}
+      SparKsCore: {r: 0.46226418, g: 0.4600837, b: 0.4600837, a: 1}
+      FlareMaterial: {fileID: 2100000, guid: 584cd27948ae9ad45b533ac30639d6f1, type: 2}
+      MainMaterial: {fileID: 2100000, guid: 6a2f9ad0a488a9b44ac8ed6742472982, type: 2}
+    CharacterColor: {r: 0.7075472, g: 0.24363652, b: 0.28570047, a: 1}
+    CharacterMaxSize: 1.5
+    EffectStartValue: 151
+    EffectMaxValue: 5000

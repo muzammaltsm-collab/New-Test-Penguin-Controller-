@@ -1,0 +1,989 @@
+fileFormatVersion: 2
+guid: 6326952ef0dae7f46b50bc99f24944cc
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable: []
+  externalObjects: {}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: "\nClip 'Penguin@Attack' has import animation warnings
+      that might lower retargeting quality:\nNote: Activate translation DOF on avatar
+      to improve retargeting quality.\n\t'Spine_01_02' has translation animation
+      that will be discarded.\n\t'Spine_02_03' has translation animation that will
+      be discarded.\n\t'Spine_02_03' is inbetween humanoid transforms and has rotation
+      animation that will be discarded.\n\t'Nack_07' has translation animation that
+      will be discarded.\n\nClip 'Penguin@Death' has import animation warnings that
+      might lower retargeting quality:\nNote: Activate translation DOF on avatar
+      to improve retargeting quality.\n\t'Spine_01_02' has translation animation
+      that will be discarded.\n\t'Spine_02_03' has translation animation that will
+      be discarded.\n\t'Spine_02_03' is inbetween humanoid transforms and has rotation
+      animation that will be discarded.\n\t'Nack_07' has translation animation that
+      will be discarded.\n\nClip 'Penguin@Hit' has import animation warnings that
+      might lower retargeting quality:\nNote: Activate translation DOF on avatar
+      to improve retargeting quality.\n\t'Spine_01_02' has translation animation
+      that will be discarded.\n\t'Spine_02_03' has translation animation that will
+      be discarded.\n\t'Spine_02_03' is inbetween humanoid transforms and has rotation
+      animation that will be discarded.\n\t'R_Shoulder_04' has translation animation
+      that will be discarded.\n\t'Nack_07' has translation animation that will be
+      discarded.\n\nClip 'Penguin@Idle_01' has import animation warnings that might
+      lower retargeting quality:\nNote: Activate translation DOF on avatar to improve
+      retargeting quality.\n\t'Spine_01_02' has translation animation that will be
+      discarded.\n\t'Spine_02_03' has translation animation that will be discarded.\n\t'Spine_02_03'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'Nack_07'
+      has translation animation that will be discarded.\n\nClip 'Penguin@Idle_02'
+      has import animation warnings that might lower retargeting quality:\nNote:
+      Activate translation DOF on avatar to improve retargeting quality.\n\t'Spine_01_02'
+      has translation animation that will be discarded.\n\t'Spine_02_03' has translation
+      animation that will be discarded.\n\t'Spine_02_03' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\t'Nack_07' has translation
+      animation that will be discarded.\n\nClip 'Penguin@Idle_03' has import animation
+      warnings that might lower retargeting quality:\nNote: Activate translation
+      DOF on avatar to improve retargeting quality.\n\t'Spine_01_02' has translation
+      animation that will be discarded.\n\t'Spine_02_03' has translation animation
+      that will be discarded.\n\t'Spine_02_03' is inbetween humanoid transforms and
+      has rotation animation that will be discarded.\n\t'Nack_07' has translation
+      animation that will be discarded.\n\t'head_08' has translation animation that
+      will be discarded.\n\nClip 'Penguin@Idle_Sleep' has import animation warnings
+      that might lower retargeting quality:\nNote: Activate translation DOF on avatar
+      to improve retargeting quality.\n\t'Spine_01_02' has translation animation
+      that will be discarded.\n\t'Spine_02_03' has translation animation that will
+      be discarded.\n\t'Spine_02_03' is inbetween humanoid transforms and has rotation
+      animation that will be discarded.\n\t'Nack_07' has translation animation that
+      will be discarded.\n\nClip 'Penguin@Run' has import animation warnings that
+      might lower retargeting quality:\nNote: Activate translation DOF on avatar
+      to improve retargeting quality.\n\t'Spine_02_03' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\nClip 'Penguin@StandUp'
+      has import animation warnings that might lower retargeting quality:\nNote:
+      Activate translation DOF on avatar to improve retargeting quality.\n\t'Spine_01_02'
+      has translation animation that will be discarded.\n\t'Spine_02_03' has translation
+      animation that will be discarded.\n\t'Spine_02_03' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\t'Nack_07' has translation
+      animation that will be discarded.\n\t'head_08' has translation animation that
+      will be discarded.\n\nClip 'Penguin@Swim' has import animation warnings that
+      might lower retargeting quality:\nNote: Activate translation DOF on avatar
+      to improve retargeting quality.\n\t'Spine_02_03' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\t'R_Wrist_06' has translation
+      animation that will be discarded.\n\t'L_Shoulder_016' has translation animation
+      that will be discarded.\n\t'L_Elbow_017' has translation animation that will
+      be discarded.\n\nClip 'Penguin@Swim_Attack' has import animation warnings that
+      might lower retargeting quality:\nNote: Activate translation DOF on avatar
+      to improve retargeting quality.\n\t'Spine_02_03' has translation animation
+      that will be discarded.\n\t'Spine_02_03' is inbetween humanoid transforms and
+      has rotation animation that will be discarded.\n\t'R_Wrist_06' has translation
+      animation that will be discarded.\n\t'Nack_07' has translation animation that
+      will be discarded.\n\t'head_08' has translation animation that will be discarded.\n\t'L_Shoulder_016'
+      has translation animation that will be discarded.\n\t'L_Elbow_017' has translation
+      animation that will be discarded.\n\nClip 'Penguin@Swim_Eat' has import animation
+      warnings that might lower retargeting quality:\nNote: Activate translation
+      DOF on avatar to improve retargeting quality.\n\t'Spine_01_02' has translation
+      animation that will be discarded.\n\t'Spine_02_03' has translation animation
+      that will be discarded.\n\t'Spine_02_03' is inbetween humanoid transforms and
+      has rotation animation that will be discarded.\n\t'R_Wrist_06' has translation
+      animation that will be discarded.\n\t'Nack_07' has translation animation that
+      will be discarded.\n\t'head_08' has translation animation that will be discarded.\n\t'L_Shoulder_016'
+      has translation animation that will be discarded.\n\t'L_Elbow_017' has translation
+      animation that will be discarded.\n\nClip 'Penguin@Walk_01' has import animation
+      warnings that might lower retargeting quality:\nNote: Activate translation
+      DOF on avatar to improve retargeting quality.\n\t'Spine_02_03' is inbetween
+      humanoid transforms and has rotation animation that will be discarded.\n\nClip
+      'Penguin@Walk_03' has import animation warnings that might lower retargeting
+      quality:\nNote: Activate translation DOF on avatar to improve retargeting quality.\n\t'Spine_01_02'
+      has translation animation that will be discarded.\n\t'Spine_02_03' has translation
+      animation that will be discarded.\n\t'Spine_02_03' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\t'Nack_07' has translation
+      animation that will be discarded.\n"
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Penguin@Attack
+      takeName: Penguin@Attack
+      internalID: 2669679169470461502
+      firstFrame: 0
+      lastFrame: 35
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Penguin@Death
+      takeName: Penguin@Death
+      internalID: -1650927747138832795
+      firstFrame: 0
+      lastFrame: 61
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Penguin@Hit
+      takeName: Penguin@Hit
+      internalID: -490324250685998832
+      firstFrame: 0
+      lastFrame: 66
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Penguin@Idle_01
+      takeName: Penguin@Idle_01
+      internalID: -2563347684691811629
+      firstFrame: 0
+      lastFrame: 100
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Penguin@Idle_02
+      takeName: Penguin@Idle_02
+      internalID: -8824909271344639172
+      firstFrame: 0
+      lastFrame: 101
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Penguin@Idle_03
+      takeName: Penguin@Idle_03
+      internalID: -521769729470616733
+      firstFrame: 0
+      lastFrame: 100
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Penguin@Idle_Sleep
+      takeName: Penguin@Idle_Sleep
+      internalID: -862928602753229420
+      firstFrame: 0
+      lastFrame: 100
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Penguin@Run
+      takeName: Penguin@Run
+      internalID: -8823327410500777804
+      firstFrame: 0
+      lastFrame: 20
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Penguin@Sleep
+      takeName: Penguin@Sleep
+      internalID: -330377339377275529
+      firstFrame: 0
+      lastFrame: 68
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Penguin@StandUp
+      takeName: Penguin@StandUp
+      internalID: -1196245405555754746
+      firstFrame: 0
+      lastFrame: 61
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Penguin@Swim
+      takeName: Penguin@Swim
+      internalID: -5939207084497918341
+      firstFrame: 0
+      lastFrame: 60
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Penguin@Swim_Attack
+      takeName: Penguin@Swim_Attack
+      internalID: -1090343231544109718
+      firstFrame: 0
+      lastFrame: 60
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Penguin@Swim_Eat
+      takeName: Penguin@Swim_Eat
+      internalID: 6527053436440917650
+      firstFrame: 0
+      lastFrame: 60
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Penguin@Walk_01
+      takeName: Penguin@Walk_01
+      internalID: -6045615666924274807
+      firstFrame: 0
+      lastFrame: 20
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Penguin@Walk_02
+      takeName: Penguin@Walk_02
+      internalID: 3658302395346733109
+      firstFrame: 0
+      lastFrame: 20
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Penguin@Walk_03
+      takeName: Penguin@Walk_03
+      internalID: 2950726525245437801
+      firstFrame: 0
+      lastFrame: 20
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human:
+    - boneName: Root_01
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_Hip_019
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: R_Hip_00
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_Knee_020
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: R_Knee_024
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_Ankle_021
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: R_Ankle_025
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Spine_01_02
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Nack_07
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: head_08
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_Shoulder_016
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: R_Shoulder_04
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_Elbow_017
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: R_Elbow_05
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_Wrist_018
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: R_Wrist_06
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_Ball_022
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: R_Ball_026
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: l_eye_012
+      humanName: LeftEye
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: r_eye_014
+      humanName: RightEye
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Jaw_010
+      humanName: Jaw
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: baby-penguin(Clone)
+      parentName: 
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Skeleton
+      parentName: baby-penguin(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Root_01
+      parentName: Skeleton
+      position: {x: 0, y: 0.013702328, z: -0.000070195645}
+      rotation: {x: -0.48321298, y: 0.51624143, z: -0.48321298, w: 0.51624143}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_Hip_019
+      parentName: Root_01
+      position: {x: 0.00208532, y: -0.00020832701, z: -0.0144927995}
+      rotation: {x: -0, y: -0, z: 0.99473286, w: 0.10250211}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000001}
+    - name: L_Knee_020
+      parentName: L_Hip_019
+      position: {x: -0.0049775317, y: -0.00054744986, z: 4.440892e-18}
+      rotation: {x: -0.9944067, y: -0.10561938, z: 0.0000000030548009, w: 0.00000002964535}
+      scale: {x: 1.0000002, y: 1.0000001, z: 1.0000001}
+    - name: L_Ankle_021
+      parentName: L_Knee_020
+      position: {x: -0.004765346, y: -0.00025229115, z: 0}
+      rotation: {x: 0.7494826, y: 0.6448873, z: -0.1134406, w: 0.09760898}
+      scale: {x: 0.9999997, y: 0.9999996, z: 0.9999996}
+    - name: L_Ball_022
+      parentName: L_Ankle_021
+      position: {x: -0.007097415, y: -4.440892e-18, z: -6.661338e-18}
+      rotation: {x: -0.00000008195638, y: -0.0000000037252899, z: -0.037032183, w: 0.99931407}
+      scale: {x: 1, y: 1, z: 1}
+    - name: L_Toe_End_023
+      parentName: L_Ball_022
+      position: {x: -0.0124187, y: 5.551115e-19, z: 6.661338e-18}
+      rotation: {x: -0.05227842, y: -0.7051716, z: -0.05227842, w: 0.7051716}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_Hip_00
+      parentName: Root_01
+      position: {x: 0.00208531, y: -0.00020832199, z: 0.0144927995}
+      rotation: {x: 0.0000007599592, y: 0.000000014901161, z: 0.10250212, w: -0.9947328}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000001}
+    - name: R_Knee_024
+      parentName: R_Hip_00
+      position: {x: 0.0049775424, y: 0.0005474422, z: -4.440892e-18}
+      rotation: {x: 0.99440664, y: 0.105619304, z: 0.00000004750073, w: -0.00000003216379}
+      scale: {x: 1.0000004, y: 1.0000005, z: 1.0000004}
+    - name: R_Ankle_025
+      parentName: R_Knee_024
+      position: {x: 0.0047653485, y: 0.00025228184, z: -2.220446e-18}
+      rotation: {x: -0.74948263, y: -0.6448874, z: 0.11344017, w: -0.09760833}
+      scale: {x: 0.9999997, y: 1.0000002, z: 1}
+    - name: R_Ball_026
+      parentName: R_Ankle_025
+      position: {x: 0.00709742, y: -5.34919e-10, z: 0.000000011112499}
+      rotation: {x: -0.00000008940696, y: 0.000000029802319, z: -0.037032004, w: 0.99931407}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000002}
+    - name: R_Toe_End_027
+      parentName: R_Ball_026
+      position: {x: 0.0124187, y: 0.0000000040693497, z: 0.0000000280438}
+      rotation: {x: -0.05227842, y: -0.7051716, z: -0.05227842, w: 0.7051716}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Spine_01_02
+      parentName: Root_01
+      position: {x: -0.0102081, y: 0.00013694899, z: -1.41461e-19}
+      rotation: {x: -0, y: -0, z: 0.014440894, w: 0.9998958}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Spine_02_03
+      parentName: Spine_01_02
+      position: {x: -0.012312699, y: 0.0000886364, z: 1.48202e-20}
+      rotation: {x: -0.000000029368842, y: 0.000000030229586, z: -0.01182194, w: 0.9999302}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000001}
+    - name: L_Shoulder_016
+      parentName: Spine_02_03
+      position: {x: -0.006764832, y: -0.001627003, z: -0.025940666}
+      rotation: {x: 0.48437226, y: -0.4958837, z: 0.47903067, w: 0.53852814}
+      scale: {x: 1, y: 1.0000001, z: 1}
+    - name: L_Elbow_017
+      parentName: L_Shoulder_016
+      position: {x: -0.014244256, y: -0.0016565844, z: -0.0011568232}
+      rotation: {x: 0.00016313787, y: 0.009464202, z: -0.0016306486, w: 0.9999539}
+      scale: {x: 1.0000001, y: 1, z: 0.9999999}
+    - name: L_Wrist_018
+      parentName: L_Elbow_017
+      position: {x: -0.012550514, y: -0.0013426787, z: 0.000034300476}
+      rotation: {x: -0.000000087795, y: 0.035987806, z: -0.000000068837906, w: 0.9993523}
+      scale: {x: 0.9999999, y: 0.9999999, z: 1.0000001}
+    - name: Nack_07
+      parentName: Spine_02_03
+      position: {x: -0.0121698, y: -0.00058343896, z: 1.81293e-17}
+      rotation: {x: 0.99840575, y: -0.056444965, z: 0.000000059604638, w: 0}
+      scale: {x: 1.0000001, y: 0.99999994, z: 0.99999994}
+    - name: head_08
+      parentName: Nack_07
+      position: {x: -0.010497737, y: 0.0006901382, z: -2.0156506e-18}
+      rotation: {x: 0.0000000019637012, y: -0.0000000012804963, z: -0.017635722, w: 0.99984455}
+      scale: {x: 1.0000005, y: 1.0000004, z: 1.0000004}
+    - name: Head_End_09
+      parentName: head_08
+      position: {x: -0.055560898, y: 0.00045089598, z: -6.2492697e-18}
+      rotation: {x: -0.10841669, y: 0.9941056, z: 6.0871414e-17, w: -6.6386054e-18}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Jaw_010
+      parentName: Head_End_09
+      position: {x: -0.04534583, y: -3.4569445e-10, z: -2.9704248e-18}
+      rotation: {x: -0.00000002227002, y: -0.00000007583767, z: -0.5656477, w: 0.82464707}
+      scale: {x: 1.0000001, y: 0.9999998, z: 1.0000002}
+    - name: Jaw_End_011
+      parentName: Jaw_010
+      position: {x: -0.032551885, y: 0, z: 3.9956662e-17}
+      rotation: {x: -0.0511251, y: -0.70525616, z: -0.0511251, w: 0.70525616}
+      scale: {x: 1, y: 1, z: 1}
+    - name: l_eye_012
+      parentName: Head_End_09
+      position: {x: -0.034999497, y: 0.0097389, z: -0.0125204}
+      rotation: {x: 0.0000000057824803, y: -0.000000041748287, z: -0.620634, w: 0.78410035}
+      scale: {x: 1.000001, y: 1.0000001, z: 1.0000007}
+    - name: joint2_013
+      parentName: l_eye_012
+      position: {x: -0.010600109, y: 0, z: 2.220446e-18}
+      rotation: {x: -0.0028511675, y: -0.70710105, z: -0.0028511675, w: 0.70710105}
+      scale: {x: 1, y: 1, z: 1}
+    - name: r_eye_014
+      parentName: Head_End_09
+      position: {x: -0.034999397, y: 0.009738919, z: 0.0125204}
+      rotation: {x: -0.000000040235946, y: -0.000000016150137, z: 0.78410035, w: 0.620634}
+      scale: {x: 1.0000011, y: 1.0000018, z: 1.0000008}
+    - name: joint3_015
+      parentName: r_eye_014
+      position: {x: 0.010600044, y: 0.000000018547784, z: -4.440892e-18}
+      rotation: {x: -0.0028511675, y: -0.70710105, z: -0.0028511675, w: 0.70710105}
+      scale: {x: 1, y: 1, z: 1}
+    - name: R_Shoulder_04
+      parentName: Spine_02_03
+      position: {x: -0.0067648357, y: -0.0016270075, z: 0.025940718}
+      rotation: {x: 0.49588317, y: 0.48437238, z: 0.5385288, w: -0.47903043}
+      scale: {x: 0.99999976, y: 0.9999999, z: 1}
+    - name: R_Elbow_05
+      parentName: R_Shoulder_04
+      position: {x: 0.014244194, y: 0.0016565999, z: 0.0011568295}
+      rotation: {x: 0.00016313785, y: 0.009464186, z: -0.0016306037, w: 0.99995387}
+      scale: {x: 1.0000001, y: 1.0000004, z: 1.0000001}
+    - name: R_Wrist_06
+      parentName: R_Elbow_05
+      position: {x: 0.01255053, y: 0.0013427, z: -0.000034301775}
+      rotation: {x: -0.000000009969216, y: 0.035987783, z: -0.000000052784117, w: 0.9993522}
+      scale: {x: 0.99999976, y: 0.9999998, z: 0.9999999}
+    - name: 0
+      parentName: baby-penguin(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: 1
+      parentName: baby-penguin(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: 2
+      parentName: baby-penguin(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 3
+  humanoidOversampling: 1
+  avatarSetup: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

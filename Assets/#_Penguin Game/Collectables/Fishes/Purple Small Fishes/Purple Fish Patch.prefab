@@ -1,0 +1,411 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6201458010485173482
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1373828874436631163}
+  m_Layer: 7
+  m_Name: Purple Fish Patch
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1373828874436631163
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6201458010485173482}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.5, y: 11.310601, z: 42.862}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 123502348941331049}
+  - {fileID: 3615046388785837413}
+  - {fileID: 2671270153339695034}
+  - {fileID: 6877934876175048892}
+  - {fileID: 1517614415235659743}
+  - {fileID: 4840157050497886230}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &3320769523630758220
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1373828874436631163}
+    m_Modifications:
+    - target: {fileID: 7871746210668949850, guid: 25e09e435492b8a49a8c08720b4f710a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7871746210668949850, guid: 25e09e435492b8a49a8c08720b4f710a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7871746210668949850, guid: 25e09e435492b8a49a8c08720b4f710a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 7871746210668949850, guid: 25e09e435492b8a49a8c08720b4f710a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7871746210668949850, guid: 25e09e435492b8a49a8c08720b4f710a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7871746210668949850, guid: 25e09e435492b8a49a8c08720b4f710a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7871746210668949850, guid: 25e09e435492b8a49a8c08720b4f710a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7871746210668949850, guid: 25e09e435492b8a49a8c08720b4f710a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7871746210668949850, guid: 25e09e435492b8a49a8c08720b4f710a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7871746210668949850, guid: 25e09e435492b8a49a8c08720b4f710a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7871746210668949851, guid: 25e09e435492b8a49a8c08720b4f710a, type: 3}
+      propertyPath: m_Name
+      value: Purple Fish Collectable
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 25e09e435492b8a49a8c08720b4f710a, type: 3}
+--- !u!4 &4840157050497886230 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7871746210668949850, guid: 25e09e435492b8a49a8c08720b4f710a, type: 3}
+  m_PrefabInstance: {fileID: 3320769523630758220}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3624652423657427430
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1373828874436631163}
+    m_Modifications:
+    - target: {fileID: 7871746210668949850, guid: 25e09e435492b8a49a8c08720b4f710a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7871746210668949850, guid: 25e09e435492b8a49a8c08720b4f710a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7871746210668949850, guid: 25e09e435492b8a49a8c08720b4f710a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 7871746210668949850, guid: 25e09e435492b8a49a8c08720b4f710a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7871746210668949850, guid: 25e09e435492b8a49a8c08720b4f710a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7871746210668949850, guid: 25e09e435492b8a49a8c08720b4f710a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7871746210668949850, guid: 25e09e435492b8a49a8c08720b4f710a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7871746210668949850, guid: 25e09e435492b8a49a8c08720b4f710a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7871746210668949850, guid: 25e09e435492b8a49a8c08720b4f710a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7871746210668949850, guid: 25e09e435492b8a49a8c08720b4f710a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7871746210668949851, guid: 25e09e435492b8a49a8c08720b4f710a, type: 3}
+      propertyPath: m_Name
+      value: Purple Fish Collectable
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 25e09e435492b8a49a8c08720b4f710a, type: 3}
+--- !u!4 &6877934876175048892 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7871746210668949850, guid: 25e09e435492b8a49a8c08720b4f710a, type: 3}
+  m_PrefabInstance: {fileID: 3624652423657427430}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5200616837902589664
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1373828874436631163}
+    m_Modifications:
+    - target: {fileID: 7871746210668949850, guid: 25e09e435492b8a49a8c08720b4f710a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7871746210668949850, guid: 25e09e435492b8a49a8c08720b4f710a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7871746210668949850, guid: 25e09e435492b8a49a8c08720b4f710a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7871746210668949850, guid: 25e09e435492b8a49a8c08720b4f710a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7871746210668949850, guid: 25e09e435492b8a49a8c08720b4f710a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7871746210668949850, guid: 25e09e435492b8a49a8c08720b4f710a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7871746210668949850, guid: 25e09e435492b8a49a8c08720b4f710a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7871746210668949850, guid: 25e09e435492b8a49a8c08720b4f710a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7871746210668949850, guid: 25e09e435492b8a49a8c08720b4f710a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7871746210668949850, guid: 25e09e435492b8a49a8c08720b4f710a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7871746210668949851, guid: 25e09e435492b8a49a8c08720b4f710a, type: 3}
+      propertyPath: m_Name
+      value: Purple Fish Collectable
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 25e09e435492b8a49a8c08720b4f710a, type: 3}
+--- !u!4 &2671270153339695034 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7871746210668949850, guid: 25e09e435492b8a49a8c08720b4f710a, type: 3}
+  m_PrefabInstance: {fileID: 5200616837902589664}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6851442818486912063
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1373828874436631163}
+    m_Modifications:
+    - target: {fileID: 7871746210668949850, guid: 25e09e435492b8a49a8c08720b4f710a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7871746210668949850, guid: 25e09e435492b8a49a8c08720b4f710a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7871746210668949850, guid: 25e09e435492b8a49a8c08720b4f710a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7871746210668949850, guid: 25e09e435492b8a49a8c08720b4f710a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7871746210668949850, guid: 25e09e435492b8a49a8c08720b4f710a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7871746210668949850, guid: 25e09e435492b8a49a8c08720b4f710a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7871746210668949850, guid: 25e09e435492b8a49a8c08720b4f710a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7871746210668949850, guid: 25e09e435492b8a49a8c08720b4f710a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7871746210668949850, guid: 25e09e435492b8a49a8c08720b4f710a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7871746210668949850, guid: 25e09e435492b8a49a8c08720b4f710a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7871746210668949851, guid: 25e09e435492b8a49a8c08720b4f710a, type: 3}
+      propertyPath: m_Name
+      value: Purple Fish Collectable
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 25e09e435492b8a49a8c08720b4f710a, type: 3}
+--- !u!4 &3615046388785837413 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7871746210668949850, guid: 25e09e435492b8a49a8c08720b4f710a, type: 3}
+  m_PrefabInstance: {fileID: 6851442818486912063}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7820724793679821619
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1373828874436631163}
+    m_Modifications:
+    - target: {fileID: 7871746210668949850, guid: 25e09e435492b8a49a8c08720b4f710a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7871746210668949850, guid: 25e09e435492b8a49a8c08720b4f710a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7871746210668949850, guid: 25e09e435492b8a49a8c08720b4f710a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7871746210668949850, guid: 25e09e435492b8a49a8c08720b4f710a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7871746210668949850, guid: 25e09e435492b8a49a8c08720b4f710a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7871746210668949850, guid: 25e09e435492b8a49a8c08720b4f710a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7871746210668949850, guid: 25e09e435492b8a49a8c08720b4f710a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7871746210668949850, guid: 25e09e435492b8a49a8c08720b4f710a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7871746210668949850, guid: 25e09e435492b8a49a8c08720b4f710a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7871746210668949850, guid: 25e09e435492b8a49a8c08720b4f710a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7871746210668949851, guid: 25e09e435492b8a49a8c08720b4f710a, type: 3}
+      propertyPath: m_Name
+      value: Purple Fish Collectable
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 25e09e435492b8a49a8c08720b4f710a, type: 3}
+--- !u!4 &123502348941331049 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7871746210668949850, guid: 25e09e435492b8a49a8c08720b4f710a, type: 3}
+  m_PrefabInstance: {fileID: 7820724793679821619}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8660889642009167493
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1373828874436631163}
+    m_Modifications:
+    - target: {fileID: 7871746210668949850, guid: 25e09e435492b8a49a8c08720b4f710a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7871746210668949850, guid: 25e09e435492b8a49a8c08720b4f710a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7871746210668949850, guid: 25e09e435492b8a49a8c08720b4f710a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7871746210668949850, guid: 25e09e435492b8a49a8c08720b4f710a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7871746210668949850, guid: 25e09e435492b8a49a8c08720b4f710a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7871746210668949850, guid: 25e09e435492b8a49a8c08720b4f710a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7871746210668949850, guid: 25e09e435492b8a49a8c08720b4f710a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7871746210668949850, guid: 25e09e435492b8a49a8c08720b4f710a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7871746210668949850, guid: 25e09e435492b8a49a8c08720b4f710a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7871746210668949850, guid: 25e09e435492b8a49a8c08720b4f710a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7871746210668949851, guid: 25e09e435492b8a49a8c08720b4f710a, type: 3}
+      propertyPath: m_Name
+      value: Purple Fish Collectable
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 25e09e435492b8a49a8c08720b4f710a, type: 3}
+--- !u!4 &1517614415235659743 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7871746210668949850, guid: 25e09e435492b8a49a8c08720b4f710a, type: 3}
+  m_PrefabInstance: {fileID: 8660889642009167493}
+  m_PrefabAsset: {fileID: 0}

@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 456b3cfe1a0850b4fa1727217667cf2c, type: 3}
+  m_Name: SoundManager
+  m_EditorClassIdentifier: 
+  _GoldenFishCollectSound: {fileID: 8300000, guid: 76f50e4bf47a70442a647117bd2fe41b,
+    type: 3}
+  _JumpSound: {fileID: 8300000, guid: 923c31b4b12aa764c91acf3ee21a795b, type: 3}
+  _PlayerDeathSound: {fileID: 8300000, guid: 60181da23cdac634dac7052eba764495, type: 3}
+  _CollectBlueFishSounds:
+  - {fileID: 8300000, guid: c4721495ff31c8b4aba18b1d4dbd11a4, type: 3}
+  _CoinsRewardSound: {fileID: 8300000, guid: 596e98a3b3df96649aad20bad4c9cf46, type: 3}
+  _UpgradeSound: {fileID: 8300000, guid: 5308d6bde2d02cd48a492725c7c9a9b2, type: 3}
+  _GemsCollectSound: {fileID: 8300000, guid: 9ee72005aebc9dc449f6afd5fe420ebe, type: 3}
+  _WinSound: {fileID: 8300000, guid: 0a21a12ec01e43b459252c5e04cac150, type: 3}
+  _PortalSound: {fileID: 8300000, guid: ec6c58a7f7eb1944d86821fb62b96511, type: 3}
