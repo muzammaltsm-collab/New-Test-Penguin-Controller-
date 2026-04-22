@@ -10,9 +10,17 @@ public class AmountShowScript : MonoBehaviour
 
     public void AmountShow(int Amount)
     {
-        AmountText.text = Amount.ToString(); 
+        if (Amount <= 0)
+        {
+            AmountText.text = "";
+            AmountShowObject.SetActive(false);
+        }
+        else
+        {
+            AmountText.text = Amount.ToString();
+        }
         //currencyConvert(Amount);
-       
+
     }
 
     #region Currency Convert

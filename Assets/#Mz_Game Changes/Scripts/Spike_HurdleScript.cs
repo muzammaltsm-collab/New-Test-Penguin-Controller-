@@ -5,6 +5,7 @@ using DG.Tweening;
 public class Spike_HurdleScript : MonoBehaviour
 {
     bool check = true;
+    [SerializeField] private AudioSource _AS;
     private void OnTriggerEnter(Collider other)
     {
         if(other.CompareTag("Player") && check)
@@ -18,6 +19,7 @@ public class Spike_HurdleScript : MonoBehaviour
 
                 GameManager.Instance.PlayerAnimation.PlayerFeature.transform.DOMove(targetPosition, 0.5f).SetEase(Ease.OutQuad); // Tween for smooth movement
                 GetComponent<Collider>().enabled = false;
+
             }
 
             GameManager.Instance.PlayerAnimation.PlayerFeature.AmountSubtractFunction();

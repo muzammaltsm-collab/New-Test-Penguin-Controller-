@@ -128,6 +128,7 @@ public class EnemyScript : MonoBehaviour
 
                     GameManager.Instance.PlayerAnimation.PlayerFeature.transform.DOMove(targetPosition, 0.5f).SetEase(Ease.OutQuad); // Tween for smooth movement
                     GetComponent<Collider>().enabled = false;
+                    GameManager.Instance.SoundManager.Play_FishHitSound(AS);
                 }
 
 
@@ -171,40 +172,7 @@ public class EnemyScript : MonoBehaviour
     {
         GameManager.Instance.PlayerAnimation.PlayerFeature.AddCharacterAmount(GamePlayEnemyLevelAmount);
         AddForceFunction();
-        //if (IsGamePlayBigBoss || IsFinishLineSmallBoss)
-        //{
-        //    GameManager.Instance.PlayerAnimation.PlayerFeature.ShowAddParticle();
-        //}
-        //else
-        //{
 
-            //int index = Random.Range(0, 3);
-            //if (index == 0)
-            //{
-            //    if (GameManager.Instance)
-            //    {
-                   
-            //        GameManager.Instance.PlayerAnimation.PlayerFeature.ShowAddParticle();
-            //    }
-            //}
-            //else if (index == 1)
-            //{
-            //    if (GameManager.Instance)
-            //    {
-            //        GameManager.Instance.SoundManager.Play_RightSlasheSound(Slashes_AS);
-
-            //        GameManager.Instance.PlayerAnimation.PlayerFeature.ShowAddParticle();
-            //    }
-            //}
-            //else
-            //{
-            //    if (GameManager.Instance)
-            //    {
-            //        GameManager.Instance.SoundManager.Play_LeftSlasheSound(Slashes_AS);
-            //        GameManager.Instance.PlayerAnimation.PlayerFeature.ShowAddParticle();
-            //    }
-            //}
-        //}
     }
 
 
@@ -220,21 +188,17 @@ public class EnemyScript : MonoBehaviour
             GameManager.Instance.SoundManager.Play_GoldenFishCollectSound(AS);
         }
 
-        //if (IsGamePlaySmallBoss || IsGamePlaySmallEnemy || IsGamePlayBigBoss ||IsFinishLineSmallBoss)
-        //{
+
         if (BossEnableParticle != null)
         {
             BossEnableParticle.SetActive(false);
         }
         BossKillingParticle.SetActive(true);
-        //}
+
         AmountShow.AmountShowObject.SetActive(false);
         col.enabled = false;
         Rend.gameObject.SetActive(false);
-        //   Rend.material = DeathMaterial;
-        // Vector3 direction = (transform.position - HitPosition).normalized;
-        //Vector3 forceDirection = (direction + PlayerForwardForce + transform.up * upwardForce).normalized * forwardForce;
-        // rb.AddForce(forceDirection, ForceMode.Impulse);
+
         StartCoroutine(DisableTimeDelay());
     }
     public void EndBossAddForceFunctionAFterKill()

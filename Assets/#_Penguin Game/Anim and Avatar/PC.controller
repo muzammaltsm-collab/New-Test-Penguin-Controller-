@@ -1079,6 +1079,9 @@ AnimatorStateMachine:
   - serializedVersion: 1
     m_State: {fileID: 1036124092829575387}
     m_Position: {x: 370, y: -380, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: 4474172517561639954}
+    m_Position: {x: 469.85303, y: -235.36118, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions:
   - {fileID: -5736286708519128431}
@@ -1143,6 +1146,32 @@ AnimatorState:
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
   m_Motion: {fileID: 7400000, guid: f168bf6cbb2a4384288020b2fe6aaf95, type: 2}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
+--- !u!1102 &4474172517561639954
+AnimatorState:
+  serializedVersion: 6
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Die
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions: []
+  m_StateMachineBehaviours: []
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 1
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: 7400000, guid: 8834857613e1ce248b03e3c81b29445a, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 

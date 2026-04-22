@@ -18,6 +18,10 @@ namespace Sound
         [SerializeField] AudioClip _GemsCollectSound;
         [SerializeField] AudioClip _WinSound;
         [SerializeField] AudioClip _PortalSound;
+        [SerializeField] AudioClip _BoxHitSound;
+        [SerializeField] AudioClip _BarrelHitSound;
+        [SerializeField] AudioClip _WoodenLogHitSound;
+        [SerializeField] AudioClip _FishHitSound;
         public void PlaySound(AudioSource AS, AudioClip ac)
         {
             if (AS == null)
@@ -35,6 +39,22 @@ namespace Sound
         public void Play_JumpSound(AudioSource AS)
         {
             PlaySound(AS, _JumpSound);
+        }
+        public void Play_FishHitSound(AudioSource AS)
+        {
+            PlaySound(AS, _FishHitSound);
+        }
+        public void Play_BoxHitSound(AudioSource AS)
+        {
+            PlaySound(AS, _BoxHitSound);
+        }
+        public void Play_WoodenLogHitSound(AudioSource AS)
+        {
+            PlaySound(AS, _WoodenLogHitSound);
+        }
+        public void Play_BarrelHitSound(AudioSource AS)
+        {
+            PlaySound(AS, _BarrelHitSound);
         }
         public void Play_PlayerDeathSound(AudioSource AS)
         {

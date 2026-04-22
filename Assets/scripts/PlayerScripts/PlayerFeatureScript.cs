@@ -38,13 +38,6 @@ public class PlayerFeatureScript : MonoBehaviour
     #region Awake and Start
     private void Start()
     {   
-        //Player Charge particle Disable
-        //for (int i = 0; i < TotalParticleSpawn; i++)
-        //{
-        //    GameObject obj = Instantiate(PlayerChargeParticle, AddParticleSpawnPosition);
-        //    obj.SetActive(false);
-        //    TempAddParticleStore.Add(obj);
-        //}
         AmountShow.AmountShow(PlayerLevelAmount);
         player_rb = GetComponent<Rigidbody>();
         CurrentSwordIndex = PlayerPrefs.GetInt("PlayerSword", 0);
@@ -92,7 +85,7 @@ public class PlayerFeatureScript : MonoBehaviour
 
         }
     }
-   
+
     #region Amount Add Function
     public void AmountAddFunction(int amount)
     {
@@ -100,8 +93,24 @@ public class PlayerFeatureScript : MonoBehaviour
         PlayerLevelAmount = PlayerLevelAmount + amount;
 
         AmountShow.AmountShow(PlayerLevelAmount);
-      
 
+
+    }
+    public bool HasEnoughFish(int amount)
+    {
+        return PlayerLevelAmount >= amount;
+    }
+    public void RemoveFish(int amount)
+    {
+        PlayerLevelAmount -= amount;
+
+        if (PlayerLevelAmount < 0)
+            PlayerLevelAmount = 0;
+
+        if (AmountShow != null)
+        {
+            AmountShow.AmountShow(PlayerLevelAmount);
+        }
     }
     public void AmountSubtractFunction()
     {
