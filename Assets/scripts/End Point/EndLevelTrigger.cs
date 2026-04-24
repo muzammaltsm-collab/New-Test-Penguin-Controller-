@@ -1,4 +1,3 @@
-using Sound;
 using System.Collections;
 using UnityEngine;
 
@@ -12,11 +11,35 @@ public class EndLevelTrigger : MonoBehaviour
     [SerializeField] private Transform[] playerPathPoints;
     [SerializeField] private float playerPathMoveSpeed = 4f;
 
-    [Header("Current Boss")]
-    [SerializeField] private BossAnimalHandler currentBoss;
-
+    [Header("Boss Sequence")]
+    [SerializeField] private BossAnimalHandler[] bosses;
+    private BossAnimalHandler currentBoss;
+    [SerializeField] private int levelsPerBoss = 5;
     private bool isTriggered = false;
     [SerializeField] AudioSource AS;
+
+    private void Start()
+    {
+        EnableRequiredBossAtStart();
+
+    }
+    private void EnableRequiredBossAtStart()
+    {
+        currentBoss = GetBossForLevel();
+
+        for (int i = 0; i < bosses.Length; i++)
+        {
+            if (bosses[i] != null)
+            {
+                bosses[i].gameObject.SetActive(bosses[i] == currentBoss);
+            }
+        }
+
+        if (currentBoss != null)
+        {
+            Debug.Log("Required Boss Enabled: " + currentBoss.name);
+        }
+    }
     private void OnTriggerEnter(Collider other)
     {
         if (isTriggered) return;
@@ -26,6 +49,36 @@ public class EndLevelTrigger : MonoBehaviour
             isTriggered = true;
             StartCoroutine(EndSequence(other.gameObject));
         }
+    }
+    private BossAnimalHandler GetBossForLevel()
+    {
+        int currentLevel = GameManager.Instance._levelManager.CurrentLevelNum;
+
+        int bossBlock = (currentLevel - 1) / levelsPerBoss;
+
+        // Normal fixed bosses first
+        if (bossBlock < bosses.Length)
+        {
+            return bosses[bossBlock];
+        }
+
+        // Random boss, but retained for same 5-level block
+        string key = "RandomBoss_Block_" + bossBlock;
+
+        int savedBossIndex;
+
+        if (PlayerPrefs.HasKey(key))
+        {
+            savedBossIndex = PlayerPrefs.GetInt(key);
+        }
+        else
+        {
+            savedBossIndex = Random.Range(0, bosses.Length);
+            PlayerPrefs.SetInt(key, savedBossIndex);
+            PlayerPrefs.Save();
+        }
+
+        return bosses[savedBossIndex];
     }
 
     private IEnumerator EndSequence(GameObject player)
@@ -63,6 +116,7 @@ public class EndLevelTrigger : MonoBehaviour
             if (GameManager.Instance.PlayerAnimation.m_Animator != null)
             {
                 GameManager.Instance.PlayerAnimation.m_Animator.Play("Run");
+                Debug.LogError("EndLevelRun");
             }
 
             yield return StartCoroutine(MovePlayerAlongPath(player));
@@ -83,7 +137,7 @@ public class EndLevelTrigger : MonoBehaviour
 
             yield return new WaitForSeconds(2f);
             GameManager.Instance.SoundManager.Play_PlayerDeathSound(AS);
-            GameManager.Instance.UI.Levelfailed.SetActive(true);
+            GameManager.Instance.UI.RetryPanel.SetActive(true);
         }
     }
 

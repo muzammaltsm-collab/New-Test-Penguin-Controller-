@@ -32,6 +32,10 @@ public class GameManager : MonoBehaviour
     [Header("...Level Manager!...")]
     public levelManager _levelManager;
 
+    // Flag to indicate player death so other systems don't force animations back to Run
+    [HideInInspector]
+    public bool IsPlayerDead = false;
+
 
     // Start is called before the first frame update
     void Start()
@@ -63,6 +67,18 @@ public class GameManager : MonoBehaviour
         UI.FadeScreen.SetActive(true);
         UI.RetryPanel.SetActive(false);
         _levelManager.PlaynextLevel();
+        // reset death flag
+        IsPlayerDead = false;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+    public void Retry()
+    {
+        Time.timeScale = 1f;
+        Debug.Log("Start");
+        UI.FadeScreen.SetActive(true);
+        UI.Levelfailed.SetActive(false);
+        // reset death flag
+        IsPlayerDead = false;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
     public void RewardAfterRV()
@@ -72,6 +88,8 @@ public class GameManager : MonoBehaviour
         UI.FadeScreen.SetActive(true);
         UI.RetryPanel.SetActive(false);
         _levelManager.PlaynextLevel();
+        // reset death flag
+        IsPlayerDead = false;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
@@ -98,3 +116,4 @@ public class GameManager : MonoBehaviour
         UI.NoThanksBtn.SetActive(true);
     }
 }
+

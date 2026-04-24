@@ -1,7 +1,5 @@
 using DG.Tweening;
-using Unity.Android.Gradle;
 using UnityEngine;
-using UnityEngine.Audio;
 
 public class HurdleHitScript : MonoBehaviour
 {

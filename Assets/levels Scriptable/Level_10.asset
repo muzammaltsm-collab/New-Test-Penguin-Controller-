@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Patches:
   - {fileID: 7508001617841339897, guid: 5c8e4bfe860a25345a68e5137e4cf7b2, type: 3}
-  StartingPointPrefeb: {fileID: 1981361141947256422, guid: 1881f1d18bae4da45803c19896ca47ff,
+  StartingPointPrefeb: {fileID: 1981361141947256422, guid: f2323b7a1f1a7764b97dd7922f4a310e,
     type: 3}
-  EndingPointPrefeb: {fileID: 7593763605997362807, guid: 19876838d447be64c80ed0eb1f9c213d,
+  EndingPointPrefeb: {fileID: 4707969022468651757, guid: 35c1bf7decdd9694599026d0ff8d57db,
     type: 3}
-  BackgroundEnv: {fileID: 352464967517641881, guid: f989526fc2b60da4790739a66a75090b,
+  BackgroundEnv: {fileID: 4064040018429667815, guid: c7c89e6288fa4eb44a3ceac1e04327d2,
     type: 3}

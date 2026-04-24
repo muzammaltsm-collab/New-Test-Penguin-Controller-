@@ -11,6 +11,7 @@ public class BossAnimalHandler : MonoBehaviour
 
     [Header("Boss Header Text")]
     [SerializeField] private TMP_Text bossRequiredText;
+    [SerializeField] private GameObject amountTextOBJ;
 
     [Header("Fish Visual Prefabs")]
     [SerializeField] private GameObject blueFishPrefab;
@@ -231,6 +232,7 @@ public class BossAnimalHandler : MonoBehaviour
         if (currentBossRemaining <= 0)
         {
             bossRequiredText.text = "";
+            amountTextOBJ.SetActive(false);
         }
         else
         {

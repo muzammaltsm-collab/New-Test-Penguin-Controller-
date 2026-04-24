@@ -12,8 +12,8 @@ PlayerSettings:
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: TinyKraken
-  productName: Demon Run
+  companyName: TSM Games
+  productName: 'Lost Penguin Rescue Quest '
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -163,7 +163,7 @@ PlayerSettings:
   androidMaxAspectRatio: 2.1
   androidMinAspectRatio: 1
   applicationIdentifier:
-    Android: com.TinyKraken.DemonRun
+    Android: com.TSMGames.LostPenguinRescueQuest
   buildNumber:
     Standalone: 0
     VisionOS: 0
@@ -293,7 +293,7 @@ PlayerSettings:
   - m_BuildTarget: 
     m_Icons:
     - serializedVersion: 2
-      m_Icon: {fileID: 2800000, guid: e6ec4f629c7f4274781558f7e96e763e, type: 3}
+      m_Icon: {fileID: 2800000, guid: 372d1c91c04b4d847a6bc60058d34ff2, type: 3}
       m_Width: 128
       m_Height: 128
       m_Kind: 0

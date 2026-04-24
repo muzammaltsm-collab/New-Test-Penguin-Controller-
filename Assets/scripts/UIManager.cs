@@ -56,6 +56,12 @@ public class UIManager : MonoBehaviour
             GameManager.Instance.OrignalPlayer.SetActive(true);
             GameManager.Instance.StartingPlayer.SetActive(false);
             IsPlayerControlsEnable = true;
+            if (GameManager.Instance.PlayerAnimation.m_Animator != null && !GameManager.Instance.IsPlayerDead)
+            {
+                GameManager.Instance.PlayerAnimation.m_Animator.transform.rotation = Quaternion.identity;
+                GameManager.Instance.PlayerAnimation.m_Animator.Play("Run");
+                Debug.Log("Play Run Animation At start");
+            }
         }
     }
     // Update is called once per frame

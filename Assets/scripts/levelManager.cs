@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -10,11 +10,20 @@ public class levelManager : MonoBehaviour
     void Start()
     {
         CurrentLevelNum = PlayerPrefs.GetInt("CurrentLevel", 0);
-        if (CurrentLevelNum >= _level.levels.Count)
+        int levelIndex;
+
+        if (CurrentLevelNum < _level.levels.Count)
         {
-            CurrentLevelNum = 0;
+            // Normal order
+            levelIndex = CurrentLevelNum;
         }
-        _level.levels[CurrentLevelNum].BuildLevel();
+        else
+        {
+            // After all levels → random
+            levelIndex = Random.Range(0, _level.levels.Count);
+        }
+
+        _level.levels[levelIndex].BuildLevel();
     }
 
     public void PlaynextLevel()
@@ -23,9 +32,5 @@ public class levelManager : MonoBehaviour
         
         PlayerPrefs.SetInt("CurrentLevel", CurrentLevelNum);
     }
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
 }

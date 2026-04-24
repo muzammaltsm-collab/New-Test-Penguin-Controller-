@@ -112,7 +112,7 @@ public class PlayerMovementController : MonoBehaviour
             velocityY = jumpForce;
             isGrounded = false;
 
-            if (GameManager.Instance.PlayerAnimation.m_Animator != null)
+            if (GameManager.Instance.PlayerAnimation.m_Animator != null && !GameManager.Instance.IsPlayerDead)
             {
                 GameManager.Instance.PlayerAnimation.m_Animator.Play("Jump");
                 isRotation = true;
@@ -127,7 +127,7 @@ public class PlayerMovementController : MonoBehaviour
         velocityY = 30f;
         isGrounded = false;
 
-        if (GameManager.Instance.PlayerAnimation.m_Animator != null)
+        if (GameManager.Instance.PlayerAnimation.m_Animator != null && !GameManager.Instance.IsPlayerDead)
         {
             GameManager.Instance.PlayerAnimation.EndSlashAnimation();
             isRotation = true;
@@ -136,7 +136,7 @@ public class PlayerMovementController : MonoBehaviour
 
     public void PlayLowerRunAnimation()
     {
-        if (GameManager.Instance.PlayerAnimation.m_Animator != null)
+        if (GameManager.Instance.PlayerAnimation.m_Animator != null && !GameManager.Instance.IsPlayerDead)
         {
             GameManager.Instance.PlayerAnimation.m_Animator.transform.rotation = Quaternion.identity;
             GameManager.Instance.PlayerAnimation.m_Animator.Play("Run");
