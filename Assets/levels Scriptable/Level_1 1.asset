@@ -18,5 +18,4 @@ MonoBehaviour:
     type: 3}
   EndingPointPrefeb: {fileID: 4707969022468651757, guid: 35c1bf7decdd9694599026d0ff8d57db,
     type: 3}
-  BackgroundEnv: {fileID: 4064040018429667815, guid: c7c89e6288fa4eb44a3ceac1e04327d2,
-    type: 3}
+  BackgroundEnv: {fileID: 0}
