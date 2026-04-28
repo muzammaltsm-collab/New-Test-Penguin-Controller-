@@ -61,7 +61,7 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Sealion 2
+  m_Name: Walrus Seal Animator 1
   serializedVersion: 5
   m_AnimatorParameters: []
   m_AnimatorLayers:
@@ -97,7 +97,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: -5624545281902316504, guid: 98403992de1e9304288ee3ae6b3a8efd,
+  m_Motion: {fileID: 6315133145000708200, guid: 00ccb7c812969914eb7031b8e6597c6c,
     type: 3}
   m_Tag: 
   m_SpeedParameter: 
@@ -112,7 +112,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Walk
-  m_Speed: 1.7
+  m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
   m_StateMachineBehaviours: []
@@ -124,8 +124,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 2667949614841947897, guid: 98403992de1e9304288ee3ae6b3a8efd,
-    type: 3}
+  m_Motion: {fileID: 0}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
