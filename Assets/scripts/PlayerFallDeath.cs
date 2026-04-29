@@ -49,9 +49,9 @@ public class PlayerFallDeath : MonoBehaviour
         // Show failed panel
         if (GameManager.Instance != null &&
             GameManager.Instance.UI != null &&
-            GameManager.Instance.UI.Levelfailed != null)
+            GameManager.Instance.UI.StagefailedPanel != null)
         {
-            GameManager.Instance.UI.Levelfailed.SetActive(true);
+            GameManager.Instance.UI.StagefailedPanel.SetActive(true);
         }
 
     }

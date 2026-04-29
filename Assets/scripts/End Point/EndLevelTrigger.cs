@@ -126,7 +126,7 @@ public class EndLevelTrigger : MonoBehaviour
                 GameManager.Instance.PlayerAnimation.m_Animator.Play("Idle");
             }
 
-            GameManager.Instance.UI.RetryPanel.SetActive(true);
+            GameManager.Instance.UI.StageClearPanel.SetActive(true);
         }
         else
         {
@@ -137,7 +137,7 @@ public class EndLevelTrigger : MonoBehaviour
 
             yield return new WaitForSeconds(2f);
             GameManager.Instance.SoundManager.Play_PlayerDeathSound(AS);
-            GameManager.Instance.UI.RetryPanel.SetActive(true);
+            GameManager.Instance.UI.StageClearPanel.SetActive(true);
         }
     }
 

@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 public class PointMover : MonoBehaviour
 {
@@ -14,14 +14,31 @@ public class PointMover : MonoBehaviour
     public bool loop = true;
     public bool reverseOnLoop = true;
 
+    [Header("Cycle Delay")]
+    public float cycleDelay = 2f; // delay between full cycles
+
     private int currentPointIndex = 0;
     private bool movingForward = true;
     private bool isMoving = true;
+
+    private bool isWaiting = false;
+    private float delayTimer = 0f;
 
     void Update()
     {
         if (!isMoving || points == null || points.Length == 0)
             return;
+
+        // Handle delay between cycles
+        if (isWaiting)
+        {
+            delayTimer -= Time.deltaTime;
+            if (delayTimer <= 0f)
+            {
+                isWaiting = false;
+            }
+            return;
+        }
 
         MoveToPoint();
     }
@@ -70,6 +87,8 @@ public class PointMover : MonoBehaviour
                     return;
                 }
 
+                StartCycleDelay(); // 👈 delay at end
+
                 if (reverseOnLoop)
                 {
                     movingForward = false;
@@ -94,9 +113,17 @@ public class PointMover : MonoBehaviour
                     return;
                 }
 
+                StartCycleDelay(); // 👈 delay at end
+
                 movingForward = true;
                 currentPointIndex = 1;
             }
         }
+    }
+
+    void StartCycleDelay()
+    {
+        isWaiting = true;
+        delayTimer = cycleDelay;
     }
 }

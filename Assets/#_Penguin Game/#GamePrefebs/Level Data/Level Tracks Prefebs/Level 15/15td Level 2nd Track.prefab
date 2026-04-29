@@ -7058,15 +7058,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4725342958438506, guid: 3d9c7d967c0192a4bb26314c14e52056, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.8360001
+      value: 2.3
       objectReference: {fileID: 0}
     - target: {fileID: 4725342958438506, guid: 3d9c7d967c0192a4bb26314c14e52056, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.8360001
+      value: 2.3
       objectReference: {fileID: 0}
     - target: {fileID: 4725342958438506, guid: 3d9c7d967c0192a4bb26314c14e52056, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.8360001
+      value: 2.3
       objectReference: {fileID: 0}
     - target: {fileID: 4725342958438506, guid: 3d9c7d967c0192a4bb26314c14e52056, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7110,9 +7110,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9084567351030318755, guid: 3d9c7d967c0192a4bb26314c14e52056,
         type: 3}
+      propertyPath: isPortalIn
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9084567351030318755, guid: 3d9c7d967c0192a4bb26314c14e52056,
+        type: 3}
       propertyPath: NewPosition
       value: 
-      objectReference: {fileID: 2630137532063663309}
+      objectReference: {fileID: 8112736000329551983}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7414,15 +7419,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4299158934565938, guid: 603b7f589d2adc446ae6f20ac3b637b5, type: 3}
       propertyPath: m_LocalScale.x
-      value: 2.346
+      value: 2.3
       objectReference: {fileID: 0}
     - target: {fileID: 4299158934565938, guid: 603b7f589d2adc446ae6f20ac3b637b5, type: 3}
       propertyPath: m_LocalScale.y
-      value: 2.3460002
+      value: 2.3
       objectReference: {fileID: 0}
     - target: {fileID: 4299158934565938, guid: 603b7f589d2adc446ae6f20ac3b637b5, type: 3}
       propertyPath: m_LocalScale.z
-      value: 2.346
+      value: 2.3
       objectReference: {fileID: 0}
     - target: {fileID: 4299158934565938, guid: 603b7f589d2adc446ae6f20ac3b637b5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7478,6 +7483,21 @@ PrefabInstance:
       propertyPath: InitialModule.maxNumParticles
       value: 50
       objectReference: {fileID: 0}
+    - target: {fileID: 198721687081955114, guid: 603b7f589d2adc446ae6f20ac3b637b5,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0.0627451
+      objectReference: {fileID: 0}
+    - target: {fileID: 198721687081955114, guid: 603b7f589d2adc446ae6f20ac3b637b5,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0.5803922
+      objectReference: {fileID: 0}
+    - target: {fileID: 198721687081955114, guid: 603b7f589d2adc446ae6f20ac3b637b5,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0.7254902
+      objectReference: {fileID: 0}
     - target: {fileID: 198864301312825912, guid: 603b7f589d2adc446ae6f20ac3b637b5,
         type: 3}
       propertyPath: InitialModule.maxNumParticles
@@ -7485,9 +7505,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2460661842468805589, guid: 603b7f589d2adc446ae6f20ac3b637b5,
         type: 3}
+      propertyPath: isPortalIn
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2460661842468805589, guid: 603b7f589d2adc446ae6f20ac3b637b5,
+        type: 3}
       propertyPath: NewPosition
       value: 
-      objectReference: {fileID: 8112736000329551983}
+      objectReference: {fileID: 2630137532063663309}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10060,6 +10085,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.5475769
       objectReference: {fileID: 0}
+    - target: {fileID: 3076962510735106558, guid: 7d873f51067617644b6195db291740c7,
+        type: 3}
+      propertyPath: NewPosition
+      value: 
+      objectReference: {fileID: 8532500579813166368}
     - target: {fileID: 5919075106640080510, guid: 7d873f51067617644b6195db291740c7,
         type: 3}
       propertyPath: NewPosition

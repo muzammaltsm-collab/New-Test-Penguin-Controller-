@@ -226,7 +226,7 @@ MonoBehaviour:
   bosses:
   - {fileID: 339912244975638961}
   - {fileID: 1705067754847329903}
-  levelsPerBoss: 5
+  levelsPerBoss: 4
   AS: {fileID: 7839735525822983438}
 --- !u!1 &1704846000270038160
 GameObject:
