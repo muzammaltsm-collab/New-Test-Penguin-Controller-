@@ -18020,6 +18020,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9084567351030318755, guid: 3d9c7d967c0192a4bb26314c14e52056,
         type: 3}
+      propertyPath: isPortalIn
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9084567351030318755, guid: 3d9c7d967c0192a4bb26314c14e52056,
+        type: 3}
       propertyPath: NewPosition
       value: 
       objectReference: {fileID: 4445473062111335091}
@@ -18318,6 +18323,11 @@ PrefabInstance:
         type: 3}
       propertyPath: InitialModule.maxNumParticles
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 2460661842468805589, guid: 603b7f589d2adc446ae6f20ac3b637b5,
+        type: 3}
+      propertyPath: isPortalIn
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2460661842468805589, guid: 603b7f589d2adc446ae6f20ac3b637b5,
         type: 3}
@@ -23536,6 +23546,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 6487005749378712113}
     m_Modifications:
+    - target: {fileID: 3076962510735106558, guid: 7d873f51067617644b6195db291740c7,
+        type: 3}
+      propertyPath: NewPosition
+      value: 
+      objectReference: {fileID: 8532500579813166368}
     - target: {fileID: 5919075106640080510, guid: 7d873f51067617644b6195db291740c7,
         type: 3}
       propertyPath: NewPosition

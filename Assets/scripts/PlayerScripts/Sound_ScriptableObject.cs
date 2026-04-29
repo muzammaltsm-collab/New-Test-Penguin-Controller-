@@ -17,7 +17,8 @@ namespace Sound
         [SerializeField] AudioClip _UpgradeSound;
         [SerializeField] AudioClip _GemsCollectSound;
         [SerializeField] AudioClip _WinSound;
-        [SerializeField] AudioClip _PortalSound;
+        [SerializeField] AudioClip _PortalInSound;
+        [SerializeField] AudioClip _PortalOutSound;
         [SerializeField] AudioClip _BoxHitSound;
         [SerializeField] AudioClip _BarrelHitSound;
         [SerializeField] AudioClip _WoodenLogHitSound;
@@ -83,9 +84,13 @@ namespace Sound
         {
             PlaySound(AS, _WinSound);
         } 
-        public void Play___PortalSound(AudioSource AS)
+        public void Play__PortalInSound(AudioSource AS)
         {
-            PlaySound(AS, _PortalSound);
+            PlaySound(AS, _PortalInSound);
+        }
+        public void Play__PortalOutSound(AudioSource AS)
+        {
+            PlaySound(AS, _PortalOutSound);
         }
         
     }

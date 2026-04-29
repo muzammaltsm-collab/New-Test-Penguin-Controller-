@@ -7,15 +7,22 @@ public class ChangePlayerPosition : MonoBehaviour
     [SerializeField] Transform NewPosition;
     [SerializeField] bool isPlayerControllesDisable;
     [SerializeField] AudioSource AS;
-
+    [SerializeField] bool isPortalIn = false;
     void OnTriggerEnter(Collider other)
     {
 
         // Check if the object colliding with this one has a "Player" tag
         if (other.CompareTag("Player"))
         {
-            GameManager.Instance.SoundManager.Play___PortalSound(AS);
+            if (isPortalIn)
+            {
 
+                GameManager.Instance.SoundManager.Play__PortalInSound(AS);
+            }
+            else
+            {
+                GameManager.Instance.SoundManager.Play__PortalOutSound(AS);
+            }
             other.transform.position = NewPosition.position;
         }
         if (isPlayerControllesDisable)

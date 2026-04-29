@@ -12,12 +12,15 @@ public class LevelPathContainer : ScriptableObject
     int _patchesCount;
     GameObject NewLevel;
     int CurrentLevelNum;
-   
+
     public void BuildLevel()
     {
         CurrentLevelNum = PlayerPrefs.GetInt("CurrentLevel", 0);
         NewLevel = new GameObject("Level:  " + CurrentLevelNum);
-        Instantiate(BackgroundEnv, NewLevel.transform);
+        if (BackgroundEnv != null)
+        {
+            Instantiate(BackgroundEnv, NewLevel.transform);
+        }
         Instantiate(StartingPointPrefeb, NewLevel.transform);
         for (_patchesCount = 0; _patchesCount < Patches.Count; _patchesCount++)
         {

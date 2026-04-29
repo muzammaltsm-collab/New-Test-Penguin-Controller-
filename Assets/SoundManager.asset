@@ -22,7 +22,8 @@ MonoBehaviour:
   _UpgradeSound: {fileID: 8300000, guid: 5308d6bde2d02cd48a492725c7c9a9b2, type: 3}
   _GemsCollectSound: {fileID: 8300000, guid: 9ee72005aebc9dc449f6afd5fe420ebe, type: 3}
   _WinSound: {fileID: 8300000, guid: 0a21a12ec01e43b459252c5e04cac150, type: 3}
-  _PortalSound: {fileID: 8300000, guid: ec6c58a7f7eb1944d86821fb62b96511, type: 3}
+  _PortalInSound: {fileID: 8300000, guid: c90d061b553aeb443b443903b93acff4, type: 3}
+  _PortalOutSound: {fileID: 8300000, guid: 500c212123832fa4cb81fc8a55eadf6c, type: 3}
   _BoxHitSound: {fileID: 8300000, guid: 700f4e569454f3d4594b1ce6e58fd040, type: 3}
   _BarrelHitSound: {fileID: 8300000, guid: 03af1f72c09c72444802f9944fef8375, type: 3}
   _WoodenLogHitSound: {fileID: 8300000, guid: ea32bc4968d12a04a983a8ff4df6c907, type: 3}
