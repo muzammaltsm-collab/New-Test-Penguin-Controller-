@@ -4,7 +4,7 @@ using TMPro;
 using UnityEngine.UI;
 public class GemsUpdater : MonoBehaviour
 {
-   
+
 
     public static GemsUpdater Instance;
     private long currentGems = 0; // Using long for large numbers
@@ -13,7 +13,11 @@ public class GemsUpdater : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        if (PlayerPrefs.GetInt("FirstTimePlaying", 1) == 1)
+        {
+            AddGems(1500);
+            PlayerPrefs.SetInt("FirstTimePlaying", 0); // Mark that the player has played for the first time
+        }
         LoadGems(); // Load Gems from saved data or initialize
         UpdateUI();
     }
@@ -24,12 +28,8 @@ public class GemsUpdater : MonoBehaviour
             Instance = this;
         }
     }
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-    
+
+
     // Add Gems to the player's balance
     public void AddGems(long amount)
     {
@@ -58,19 +58,20 @@ public class GemsUpdater : MonoBehaviour
     // Format the Gem amount into thousands, millions, or billions
     private string FormatGems(long Gems)
     {
-        if (Gems >= 1000000000) // If billions or more
+        if (Gems >= 1000000000)
         {
-            return (Gems / 1000000000).ToString() + "B";
+            return (Gems / 1000000000f).ToString("0.#") + "B";
         }
-        else if (Gems >= 1000000) // If millions or more
+        else if (Gems >= 1000000)
         {
-            return (Gems / 1000000).ToString() + "M";
+            return (Gems / 1000000f).ToString("0.#") + "M";
         }
-        else if (Gems >= 1000) // If thousands or more
+        else if (Gems >= 1000)
         {
-            return (Gems / 1000).ToString() + "K";
+            return (Gems / 1000f).ToString("0.#") + "K";
         }
-        else // Less than a thousand
+
+        else
         {
             return Gems.ToString();
         }

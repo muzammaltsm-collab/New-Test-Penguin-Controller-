@@ -596,7 +596,7 @@ Transform:
   m_GameObject: {fileID: 2690020949601225684}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.17000008, y: 0, z: 186.64}
+  m_LocalPosition: {x: 0.17000008, y: 0, z: 193.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -10655,7 +10655,7 @@ PrefabInstance:
     - target: {fileID: 4061848794415218497, guid: 00fdd293023a1464c890519011340d03,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 155.7
+      value: 160.9
       objectReference: {fileID: 0}
     - target: {fileID: 4061848794415218497, guid: 00fdd293023a1464c890519011340d03,
         type: 3}
@@ -13135,6 +13135,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5903155157905720601, guid: 3d45ae9402040df4d95f83e79121582f,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 32.722397
+      objectReference: {fileID: 0}
+    - target: {fileID: 5903155157905720601, guid: 3d45ae9402040df4d95f83e79121582f,
+        type: 3}
+      propertyPath: m_Center.x
+      value: -8.075901
+      objectReference: {fileID: 0}
+    - target: {fileID: 5903155157905720601, guid: 3d45ae9402040df4d95f83e79121582f,
+        type: 3}
+      propertyPath: m_Center.z
+      value: 0.28979388
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13764,7 +13779,7 @@ PrefabInstance:
     - target: {fileID: 7586645650476424169, guid: a8ecb2586751cad46ae3dc00baab6890,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0.6
       objectReference: {fileID: 0}
     - target: {fileID: 7586645650476424169, guid: a8ecb2586751cad46ae3dc00baab6890,
         type: 3}
@@ -13774,7 +13789,7 @@ PrefabInstance:
     - target: {fileID: 7586645650476424169, guid: a8ecb2586751cad46ae3dc00baab6890,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 134.549
+      value: 143
       objectReference: {fileID: 0}
     - target: {fileID: 7586645650476424169, guid: a8ecb2586751cad46ae3dc00baab6890,
         type: 3}
@@ -13820,6 +13835,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: New Double Fish Arch
+      objectReference: {fileID: 0}
+    - target: {fileID: 8775916550923398869, guid: a8ecb2586751cad46ae3dc00baab6890,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8806615890231457707, guid: a8ecb2586751cad46ae3dc00baab6890,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 46.73108
+      objectReference: {fileID: 0}
+    - target: {fileID: 8806615890231457707, guid: a8ecb2586751cad46ae3dc00baab6890,
+        type: 3}
+      propertyPath: m_Center.x
+      value: -5.013882
+      objectReference: {fileID: 0}
+    - target: {fileID: 8806615890231457707, guid: a8ecb2586751cad46ae3dc00baab6890,
+        type: 3}
+      propertyPath: m_Center.z
+      value: 0.28979388
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14078,7 +14113,7 @@ PrefabInstance:
     - target: {fileID: 4061848794415218497, guid: 00fdd293023a1464c890519011340d03,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 155.7
+      value: 160.9
       objectReference: {fileID: 0}
     - target: {fileID: 4061848794415218497, guid: 00fdd293023a1464c890519011340d03,
         type: 3}

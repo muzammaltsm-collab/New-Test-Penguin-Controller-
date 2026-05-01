@@ -66,6 +66,9 @@ public class Loading : MonoBehaviour
             progressBar.fillAmount = 1f;
         }
 
+
+
+
         if (AdsManagerWrapper.Instance != null && AdsManagerWrapper.Instance.isAppOpenAvailable()) { AdsManagerWrapper.Instance.ShowAppOpen(); }
 
         SceneManager.LoadScene(gameplaySceneName);
