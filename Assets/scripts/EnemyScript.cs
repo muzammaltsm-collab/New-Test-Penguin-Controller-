@@ -102,6 +102,7 @@ public class EnemyScript : MonoBehaviour
     {
         if (col.CompareTag(k_PlayerTag) && !m_Applied)
         {
+           
             HitPosition = col.transform.position;
             PlayerForwardForce = col.transform.forward;
             hitDirection = (col.transform.position - transform.position).normalized; // Calculate the direction from the enemy to the player
@@ -130,7 +131,7 @@ public class EnemyScript : MonoBehaviour
                     GetComponent<Collider>().enabled = false;
                     GameManager.Instance.SoundManager.Play_FishHitSound(AS);
                 }
-
+                GameManager.Instance._haptic.SoftImpactHaptic();
 
                 GameManager.Instance.PlayerAnimation.PlayerFeature.AmountSubtractFunction();
             }
@@ -151,6 +152,8 @@ public class EnemyScript : MonoBehaviour
 
                 // Call the HitByEnemy method on the player script
                 GameManager.Instance.PlayerAnimation.PlayerFeature.HitByEnemy();
+                // haptic feedback
+                GameManager.Instance._haptic.MediumImpactHaptic();
 
 
             }
@@ -194,7 +197,7 @@ public class EnemyScript : MonoBehaviour
             BossEnableParticle.SetActive(false);
         }
         BossKillingParticle.SetActive(true);
-
+        GameManager.Instance._haptic.LightImpactHaptic();
         AmountShow.AmountShowObject.SetActive(false);
         col.enabled = false;
         Rend.gameObject.SetActive(false);
@@ -225,6 +228,8 @@ public class EnemyScript : MonoBehaviour
         EndBossRagdol.SetActive(true);
         EndBoss_RigidBody.AddForce(transform.forward * EndBossforwardForce, ForceMode.Impulse);
         EndBoss_RigidBody.AddForce(Vector3.up * EndBossupwardForce, ForceMode.Impulse);
+
+        GameManager.Instance._haptic.HeavyImpactHaptic();  // Heavy haptic for end boss kill
 
         Invoke(nameof(StopPlayerEndOfLevel), 2f);
     }

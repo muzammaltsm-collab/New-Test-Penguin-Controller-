@@ -1,3 +1,4 @@
+using Solo.MOST_IN_ONE;
 using Sound;
 using System.Collections;
 using System.Collections.Generic;
@@ -31,6 +32,9 @@ public class GameManager : MonoBehaviour
     public UIManager UI;
     [Header("...Level Manager!...")]
     public levelManager _levelManager;
+
+    [Header("...Level Manager!...")]
+    public HapticsExample _haptic;
 
     // Flag to indicate player death so other systems don't force animations back to Run
     [HideInInspector]

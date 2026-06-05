@@ -92,12 +92,17 @@ public class UIManager : MonoBehaviour
 
     public void Retry()
     {
+        //haptic feedback
+        GameManager.Instance._haptic.SelectionHaptic();
         FadeScreen.SetActive(true);
         // Reload the current scene
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
     public void RetryWithCoins()
     {
+        //heaptic feedback
+        GameManager.Instance._haptic.SelectionHaptic();
+
 
         long cost = 500;
 
@@ -126,6 +131,7 @@ public class UIManager : MonoBehaviour
 
     public void RetryWithAd()
     {
+        GameManager.Instance._haptic.SelectionHaptic(); 
         AdsManagerWrapper.Instance.ShowRewardedVideo(OnAdSuccess, OnAdFailed);
     }
 

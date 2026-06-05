@@ -48,14 +48,17 @@ public class HurdleHitScript : MonoBehaviour
             {
                 case HurdleKind.Box:
                     GameManager.Instance.SoundManager.Play_BoxHitSound(AS);
+                    GameManager.Instance._haptic.WarningHapticWithCooldown(0.5f);
                     break;
 
                 case HurdleKind.Barrel:
                     GameManager.Instance.SoundManager.Play_BarrelHitSound(AS);
+                    GameManager.Instance._haptic.WarningHapticWithCooldown(0.5f);
                     break;
 
                 case HurdleKind.WoodenLog:
                     GameManager.Instance.SoundManager.Play_WoodenLogHitSound(AS);
+                    GameManager.Instance._haptic.WarningHapticWithCooldown(0.9f);
                     break;
             }
 
