@@ -145,11 +145,24 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 1
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: button_0
+      name: button 1_0
       rect:
         serializedVersion: 2
         x: 6
@@ -158,14 +171,14 @@ TextureImporter:
         height: 187
       alignment: 0
       pivot: {x: 0, y: 0}
-      border: {x: 50, y: 50, z: 50, w: 50}
+      border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 43fb398bc099be649a5729214b116829
-      internalID: 1305439129
+      spriteID: 6e0d269a1bd0e49519dedb98f067a42c
+      internalID: 1782076552
       vertices: []
       indices: 
       edges: []
@@ -188,7 +201,7 @@ TextureImporter:
       - key: SpriteEditor.SliceOnImport
         value: True
     nameFileIdTable:
-      button_0: 1305439129
+      button 1_0: 1782076552
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
