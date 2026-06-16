@@ -29,7 +29,7 @@ MonoBehaviour:
   _WoodenLogHitSound: {fileID: 8300000, guid: ea32bc4968d12a04a983a8ff4df6c907, type: 3}
   _FishHitSound: {fileID: 8300000, guid: 3b4299f9d585d49439e113e7da2f9b5b, type: 3}
   _MainMenuMusic: {fileID: 8300000, guid: a479a07a8f96623428e2b36ce681f357, type: 3}
-  _GameplayMusic: {fileID: 8300000, guid: 13e8d3d0d5589b94b8b23b54d3814ee4, type: 3}
+  _GameplayMusic: {fileID: 8300000, guid: 1f51cedc6bb84214eb208ca5b7541751, type: 3}
   _boxHitHaptic: 5
   _barrelHitHaptic: 5
   _woodenLogHitHaptic: 5

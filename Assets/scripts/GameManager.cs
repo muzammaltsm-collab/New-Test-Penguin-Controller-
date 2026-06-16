@@ -15,7 +15,6 @@ public class GameManager : MonoBehaviour
     public GameObject MovementController;
     [Header("...PlayerFeatureScript!...")]
     public PlayerFeatureScript _playerFeatureScript;
-
     [Header("...Main Camera!...")]
     public CameraFollow MainCamera;
     [Header("...Player Animation Script!...")]

@@ -503,7 +503,7 @@ MonoBehaviour:
   coinCount: 6
   burstRadius: 120
   burstDuration: 0.3
-  holdDuration: 0.5
+  holdDuration: 0.12
   staggerDelay: 0.05
   flyDuration: 1
   arcHeight: 80
@@ -1853,7 +1853,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1727546431}
   m_Father: {fileID: 6797660142655312540}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
@@ -5654,11 +5655,11 @@ RectTransform:
   m_LocalScale: {x: 0.13366, y: 0.13366, z: 0.13366}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 6797660142070548985}
+  m_Father: {fileID: 454652406}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -43.2, y: 877.7999}
+  m_AnchoredPosition: {x: -66.29983, y: -2.5}
   m_SizeDelta: {x: 155, y: 158.3}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!1 &1734666096
@@ -10115,7 +10116,6 @@ RectTransform:
   - {fileID: 1413946687}
   - {fileID: 6797660142607953794}
   - {fileID: 6797660142655312540}
-  - {fileID: 1727546431}
   - {fileID: 39342837}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

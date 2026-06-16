@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
 public class CoinFlyEffect : MonoBehaviour
@@ -20,6 +21,46 @@ public class CoinFlyEffect : MonoBehaviour
     [Header("Fly-To-Target Settings")]
     [SerializeField] float flyDuration = 0.6f;
     [SerializeField] float arcHeight = 80f;
+
+    [Header("Pooling")]
+    [SerializeField] int poolSize = 12; // should be >= coinCount, a little headroom is fine
+
+    readonly Queue<RectTransform> pool = new Queue<RectTransform>();
+
+    void Awake()
+    {
+        for (int i = 0; i < poolSize; i++)
+        {
+            GameObject coinGO = Instantiate(coinPrefab, canvas.transform);
+            coinGO.SetActive(false);
+            pool.Enqueue(coinGO.GetComponent<RectTransform>());
+        }
+    }
+
+    RectTransform GetCoinFromPool()
+    {
+        RectTransform coinRT;
+        if (pool.Count > 0)
+        {
+            coinRT = pool.Dequeue();
+        }
+        else
+        {
+            // pool exhausted (shouldn't normally happen) - grow it
+            GameObject coinGO = Instantiate(coinPrefab, canvas.transform);
+            coinRT = coinGO.GetComponent<RectTransform>();
+        }
+
+        coinRT.gameObject.SetActive(true);
+        return coinRT;
+    }
+
+    void ReturnCoinToPool(RectTransform coinRT)
+    {
+        coinRT.DOKill();
+        coinRT.gameObject.SetActive(false);
+        pool.Enqueue(coinRT);
+    }
 
     public void PlayCoinFly(System.Action onComplete = null)
     {
@@ -46,8 +87,8 @@ public class CoinFlyEffect : MonoBehaviour
 
     void SpawnSingleCoin(float angleDegrees, System.Action onCoinComplete)
     {
-        GameObject coinGO = Instantiate(coinPrefab, canvas.transform);
-        RectTransform coinRT = coinGO.GetComponent<RectTransform>();
+        RectTransform coinRT = GetCoinFromPool();
+        coinRT.localScale = Vector3.one;
         coinRT.position = spawnPoint.position;
 
         float rad = angleDegrees * Mathf.Deg2Rad;
@@ -72,7 +113,7 @@ public class CoinFlyEffect : MonoBehaviour
                 {
                     if (coinPopEffect != null) coinPopEffect.Pop();
                     onCoinComplete?.Invoke();
-                    Destroy(coinGO);
+                    ReturnCoinToPool(coinRT);
                 });
 
             coinRT.DOScale(0.6f, flyDuration).SetEase(Ease.InQuad);
