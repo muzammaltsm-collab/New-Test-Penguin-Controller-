@@ -54,7 +54,7 @@ public class UIManager : MonoBehaviour
     }
     public void DisableRetryPanel()
     {
-       
+
         RetryPanel.SetActive(false);
         PlayerMovementController playerMovementController = PlayerMovementController.GetInstance();
         if (playerMovementController != null)
@@ -66,9 +66,10 @@ public class UIManager : MonoBehaviour
     {
 
         RetryBtn.SetActive(false);
+        GameManager.Instance.SoundManager.Haptic_ButtonPress();               // Add haptic feedback for retry with coins button press
         DiamondsContainer.SetActive(true);
         GameStartPanel.SetActive(true);
-        GameManager.Instance.MusicManager.PlayMainMenuMusic(); // Start main menu music when the game starts
+        GameManager.Instance.MusicManager.PlayMainMenuMusic();                      // Start main menu music when the game starts
 
         if (GameManager.Instance)
         {
@@ -79,6 +80,7 @@ public class UIManager : MonoBehaviour
     }
     public void StartGame()
     {
+        GameManager.Instance.SoundManager.Haptic_ButtonPress();           // Add haptic feedback for start game button press
         RetryBtn.SetActive(true);
         GameStartPanel.SetActive(false);
         if (GameManager.Instance)
@@ -87,7 +89,7 @@ public class UIManager : MonoBehaviour
             GameManager.Instance.OrignalPlayer.SetActive(true);
             GameManager.Instance.StartingPlayer.SetActive(false);
             IsPlayerControlsEnable = true;
-            GameManager.Instance.MusicManager.PlayGameplayMusic(); // Start gameplay music when the game starts
+            GameManager.Instance.MusicManager.PlayGameplayMusic();                     // Start gameplay music when the game starts
 
             if (GameManager.Instance.PlayerAnimation.m_Animator != null && !GameManager.Instance.IsPlayerDead)
             {
@@ -100,12 +102,14 @@ public class UIManager : MonoBehaviour
 
     public void Retry()
     {
+        GameManager.Instance.SoundManager.Haptic_ButtonPress();                 // Add haptic feedback for retry button press
         FadeScreen.SetActive(true);
         // Reload the current scene
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
     public void RetryWithCoins()
     {
+        GameManager.Instance.SoundManager.Haptic_ButtonPress();               // Add haptic feedback for retry with coins button press
 
         long cost = 500;
 
@@ -134,6 +138,7 @@ public class UIManager : MonoBehaviour
 
     public void RetryWithAd()
     {
+        GameManager.Instance.SoundManager.Haptic_ButtonPress();                       // Add haptic feedback for ad button press
         AdsManagerWrapper.Instance.ShowRewardedVideo(OnAdSuccess, OnAdFailed);
     }
 

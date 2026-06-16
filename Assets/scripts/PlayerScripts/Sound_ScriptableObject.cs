@@ -1,7 +1,7 @@
-
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Solo.MOST_IN_ONE;
 
 namespace Sound
 {
@@ -12,7 +12,7 @@ namespace Sound
         [SerializeField] AudioClip _JumpSound;
         [SerializeField] AudioClip _PlayerDeathSound;
         [SerializeField] AudioClip[] _CollectBlueFishSounds;
-       
+
         [SerializeField] AudioClip _CoinsRewardSound;
         [SerializeField] AudioClip _UpgradeSound;
         [SerializeField] AudioClip _GemsCollectSound;
@@ -27,9 +27,15 @@ namespace Sound
         [Header("Music")]
         [SerializeField] AudioClip _MainMenuMusic;
         [SerializeField] AudioClip _GameplayMusic;
-
         public AudioClip MainMenuMusic => _MainMenuMusic;
         public AudioClip GameplayMusic => _GameplayMusic;
+
+        [Header("Haptics")]
+        [SerializeField] MOST_HapticFeedback.HapticTypes _boxHitHaptic = MOST_HapticFeedback.HapticTypes.MediumImpact;
+        [SerializeField] MOST_HapticFeedback.HapticTypes _barrelHitHaptic = MOST_HapticFeedback.HapticTypes.MediumImpact;
+        [SerializeField] MOST_HapticFeedback.HapticTypes _woodenLogHitHaptic = MOST_HapticFeedback.HapticTypes.MediumImpact;
+        [SerializeField] MOST_HapticFeedback.HapticTypes _playerDeathHaptic = MOST_HapticFeedback.HapticTypes.Failure;
+        [SerializeField] MOST_HapticFeedback.HapticTypes _buttonPressHaptic = MOST_HapticFeedback.HapticTypes.RigidImpact;
 
         public void PlaySound(AudioSource AS, AudioClip ac)
         {
@@ -40,7 +46,7 @@ namespace Sound
             AS.clip = ac;
             AS.Play();
         }
-      
+
         public void Play_GoldenFishCollectSound(AudioSource AS)
         {
             PlaySound(AS, _GoldenFishCollectSound);
@@ -74,7 +80,7 @@ namespace Sound
             PlaySound(AS, _CollectBlueFishSounds[UnityEngine.Random.Range(0,
                 _CollectBlueFishSounds.Length)]);
         }
-       
+
         public void Play_CoinsRewardSound(AudioSource AS)
         {
             PlaySound(AS, _CoinsRewardSound);
@@ -83,7 +89,7 @@ namespace Sound
         {
             PlaySound(AS, _UpgradeSound);
         }
-      
+
         public void Play_GemsCollectSound(AudioSource AS)
         {
             PlaySound(AS, _GemsCollectSound);
@@ -91,7 +97,7 @@ namespace Sound
         public void Play__WinSound(AudioSource AS)
         {
             PlaySound(AS, _WinSound);
-        } 
+        }
         public void Play__PortalInSound(AudioSource AS)
         {
             PlaySound(AS, _PortalInSound);
@@ -100,6 +106,27 @@ namespace Sound
         {
             PlaySound(AS, _PortalOutSound);
         }
-        
+
+        // ---------------- Haptics ----------------
+        public void Haptic_BoxHit()
+        {
+            MOST_HapticFeedback.Generate(_boxHitHaptic);
+        }
+        public void Haptic_BarrelHit()
+        {
+            MOST_HapticFeedback.Generate(_barrelHitHaptic);
+        }
+        public void Haptic_WoodenLogHit()
+        {
+            MOST_HapticFeedback.Generate(_woodenLogHitHaptic);
+        }
+        public void Haptic_PlayerDeath()
+        {
+            MOST_HapticFeedback.Generate(_playerDeathHaptic);
+        }
+        public void Haptic_ButtonPress()
+        {
+            MOST_HapticFeedback.Generate(_buttonPressHaptic);
+        }
     }
 }

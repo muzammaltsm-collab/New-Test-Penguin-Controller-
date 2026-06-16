@@ -52,6 +52,7 @@ public class PlayerFallDeath : MonoBehaviour
             GameManager.Instance.UI.StagefailedPanel != null)
         {
             GameManager.Instance.UI.StagefailedPanel.SetActive(true);
+            GameManager.Instance.SoundManager.Haptic_PlayerDeath();   // Add haptic feedback for player death
         }
 
     }

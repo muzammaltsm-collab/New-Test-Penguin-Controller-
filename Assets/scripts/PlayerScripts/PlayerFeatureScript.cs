@@ -54,6 +54,8 @@ public class PlayerFeatureScript : MonoBehaviour
     public void HitByEnemy()
     {
         GameManager.Instance.SoundManager.Play_PlayerDeathSound(AS);
+       
+
         PlayerMovementController playerMovementController = PlayerMovementController.GetInstance();
         if (playerMovementController != null)
         {

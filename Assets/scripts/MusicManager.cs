@@ -1,16 +1,17 @@
 using UnityEngine;
-
 public class MusicManager : MonoBehaviour
 {
     [SerializeField] AudioSource musicSource;
     [SerializeField] Sound.Sound_ScriptableObject soundData;
     [SerializeField] float fadeDuration = 0.5f;
+    [SerializeField] float targetVolume = 1f; // the "full" music volume, fixed
 
     Coroutine fadeRoutine;
 
     void Awake()
     {
         musicSource.loop = true;
+        musicSource.volume = targetVolume;
     }
 
     public void PlayMainMenuMusic() => PlayMusic(soundData.MainMenuMusic);
@@ -19,16 +20,14 @@ public class MusicManager : MonoBehaviour
     public void PlayMusic(AudioClip clip)
     {
         if (clip == null || musicSource.clip == clip) return;
-
         if (fadeRoutine != null) StopCoroutine(fadeRoutine);
         fadeRoutine = StartCoroutine(FadeToClip(clip));
     }
 
     System.Collections.IEnumerator FadeToClip(AudioClip clip)
     {
-        float startVolume = musicSource.volume;
+        float startVolume = musicSource.volume; // wherever it currently is, for a smooth fade-out only
 
-        // fade out
         float t = 0f;
         while (t < fadeDuration)
         {
@@ -41,15 +40,14 @@ public class MusicManager : MonoBehaviour
         musicSource.volume = 0f;
         musicSource.Play();
 
-        // fade in
         t = 0f;
         while (t < fadeDuration)
         {
             t += Time.deltaTime;
-            musicSource.volume = Mathf.Lerp(0f, startVolume, t / fadeDuration);
+            musicSource.volume = Mathf.Lerp(0f, targetVolume, t / fadeDuration); // always fades back to the fixed target
             yield return null;
         }
 
-        musicSource.volume = startVolume;
+        musicSource.volume = targetVolume;
     }
 }
