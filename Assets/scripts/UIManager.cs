@@ -16,6 +16,10 @@ public class UIManager : MonoBehaviour
     public GameObject RetryBtn;
     [Header("...Coim Caintainer !...")]
     public GameObject DiamondsContainer;
+
+    [Header("...Coin Pop Effect!...")]
+    public UIPop coinPopEffect;
+
     public bool IsPlayerControlsEnable = false;
     [Header("...Stage Clear Panels!...")]
     public GameObject StageClearPanel;
@@ -64,6 +68,8 @@ public class UIManager : MonoBehaviour
         RetryBtn.SetActive(false);
         DiamondsContainer.SetActive(true);
         GameStartPanel.SetActive(true);
+        GameManager.Instance.MusicManager.PlayMainMenuMusic(); // Start main menu music when the game starts
+
         if (GameManager.Instance)
         {
             GameManager.Instance.OrignalPlayer.SetActive(false);
@@ -81,6 +87,8 @@ public class UIManager : MonoBehaviour
             GameManager.Instance.OrignalPlayer.SetActive(true);
             GameManager.Instance.StartingPlayer.SetActive(false);
             IsPlayerControlsEnable = true;
+            GameManager.Instance.MusicManager.PlayGameplayMusic(); // Start gameplay music when the game starts
+
             if (GameManager.Instance.PlayerAnimation.m_Animator != null && !GameManager.Instance.IsPlayerDead)
             {
                 GameManager.Instance.PlayerAnimation.m_Animator.transform.rotation = Quaternion.identity;
@@ -199,5 +207,12 @@ public class UIManager : MonoBehaviour
         yield return new WaitForSecondsRealtime(3f);
 
         NoAdAvailableText.SetActive(false);
+    }
+    public void PlayCoinPop()
+    {
+        if (coinPopEffect != null)
+        {
+            coinPopEffect.Pop();
+        }
     }
 }

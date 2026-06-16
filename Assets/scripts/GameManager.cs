@@ -31,6 +31,8 @@ public class GameManager : MonoBehaviour
     public UIManager UI;
     [Header("...Level Manager!...")]
     public levelManager _levelManager;
+    [Header("...Music Manager!...")]
+    public MusicManager MusicManager;
 
     // Flag to indicate player death so other systems don't force animations back to Run
     [HideInInspector]

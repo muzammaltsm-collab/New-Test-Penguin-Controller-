@@ -8,9 +8,10 @@ public class CollectDiamond : MonoBehaviour
     [SerializeField] GameObject Diamond;
     [SerializeField] GameObject DiamondParticles;
     [SerializeField] AudioSource AS;
+
     //[SerializeField] Vector3 moveDirection;// Change this to your desired direction
     //[SerializeField] float moveSpeed = 5f;
-   
+
     //[SerializeField] float ScaleDecreasesSpeed = 5f;
     bool isMoving = false;
     Vector3 initialScale;
@@ -30,6 +31,7 @@ public class CollectDiamond : MonoBehaviour
             {
                 GameManager.Instance.SoundManager.Play_GemsCollectSound(AS);
                 GameManager.Instance._gemsUpdater.AddGems(1);
+                GameManager.Instance.UI.PlayCoinPop();
             }
             PlayParticles();
             //GameManager.Instance.PlayerAnimation.PlayerFeature.DiamondCollectParticle.SetActive(true);

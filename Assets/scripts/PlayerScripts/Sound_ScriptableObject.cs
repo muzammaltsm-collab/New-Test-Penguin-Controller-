@@ -23,6 +23,14 @@ namespace Sound
         [SerializeField] AudioClip _BarrelHitSound;
         [SerializeField] AudioClip _WoodenLogHitSound;
         [SerializeField] AudioClip _FishHitSound;
+
+        [Header("Music")]
+        [SerializeField] AudioClip _MainMenuMusic;
+        [SerializeField] AudioClip _GameplayMusic;
+
+        public AudioClip MainMenuMusic => _MainMenuMusic;
+        public AudioClip GameplayMusic => _GameplayMusic;
+
         public void PlaySound(AudioSource AS, AudioClip ac)
         {
             if (AS == null)
