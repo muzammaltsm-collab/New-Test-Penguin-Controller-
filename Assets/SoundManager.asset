@@ -18,11 +18,11 @@ MonoBehaviour:
   _PlayerDeathSound: {fileID: 8300000, guid: f6f32c93a1d62fb42b8a40d5f85ef2c0, type: 3}
   _CollectBlueFishSounds:
   - {fileID: 8300000, guid: c5a2079d6cf80cd4b8201fa1f7a13915, type: 3}
-  _CoinsRewardSound: {fileID: 8300000, guid: 596e98a3b3df96649aad20bad4c9cf46, type: 3}
+  _CoinsRewardSound: {fileID: 8300000, guid: 9d6517ef887f6944aa575d274ebb8bae, type: 3}
   _UpgradeSound: {fileID: 8300000, guid: 5308d6bde2d02cd48a492725c7c9a9b2, type: 3}
   _GemsCollectSound: {fileID: 8300000, guid: 43bb2479c8ab424469ede66529002941, type: 3}
   _WinSound: {fileID: 8300000, guid: 0a21a12ec01e43b459252c5e04cac150, type: 3}
-  _PortalInSound: {fileID: 8300000, guid: c90d061b553aeb443b443903b93acff4, type: 3}
+  _PortalInSound: {fileID: 8300000, guid: 879e6cd9763d258499c21a72cfab325e, type: 3}
   _PortalOutSound: {fileID: 8300000, guid: 500c212123832fa4cb81fc8a55eadf6c, type: 3}
   _BoxHitSound: {fileID: 8300000, guid: 700f4e569454f3d4594b1ce6e58fd040, type: 3}
   _BarrelHitSound: {fileID: 8300000, guid: 03af1f72c09c72444802f9944fef8375, type: 3}

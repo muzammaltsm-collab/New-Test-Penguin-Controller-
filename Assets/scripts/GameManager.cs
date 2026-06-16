@@ -121,5 +121,7 @@ public class GameManager : MonoBehaviour
     {
         UI.NoThanksBtn.SetActive(true);
     }
+
+
 }
 

@@ -20,6 +20,9 @@ public class UIManager : MonoBehaviour
     [Header("...Coin Pop Effect!...")]
     public UIPop coinPopEffect;
 
+    [Header("...Coin Fly Effect!...")]
+    public CoinFlyEffect coinFlyEffect;
+
     public bool IsPlayerControlsEnable = false;
     [Header("...Stage Clear Panels!...")]
     public GameObject StageClearPanel;
@@ -219,5 +222,14 @@ public class UIManager : MonoBehaviour
         {
             coinPopEffect.Pop();
         }
+    }
+    public void OnNoThanksPressed()
+    {
+        GameManager.Instance.SoundManager.Haptic_ButtonPress();
+        GameManager.Instance.SoundManager.Play_CoinsRewardSound(GameManager.Instance.AS);
+        coinFlyEffect.PlayCoinFly(() =>
+        {
+            GameManager.Instance.Restart();
+        });
     }
 }
