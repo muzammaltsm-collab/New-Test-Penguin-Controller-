@@ -1,0 +1,13 @@
+plugins {
+    id 'com.android.library'
+}
+
+android {
+    namespace 'com.tsmgames.lostpenguinquest.adiregistration'
+    compileSdkVersion 35
+
+    defaultConfig {
+        minSdkVersion 25
+        targetSdkVersion 35
+    }
+}
