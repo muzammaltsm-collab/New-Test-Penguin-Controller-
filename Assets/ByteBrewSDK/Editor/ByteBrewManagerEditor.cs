@@ -20,10 +20,25 @@ namespace ByteBrewSDK
             GUI.DrawTexture(new Rect(15f, 30f, 275f, 75f), bytebrewLogo);
 
             GUILayout.Space(100f); //2
+            GUILayout.Label($"ByteBrew Unity SDK v{ByteBrew.SDK_VERSION}", EditorStyles.helpBox);
+            GUILayout.Space(2f);
             EditorGUILayout.HelpBox("Go to your games setting in the ByteBrew Dashboard to get the right keys.", MessageType.Info);
+            GUILayout.Space(10f);
             GUILayout.Label("ByteBrew App Settings", EditorStyles.boldLabel);
 
             GUILayout.Space(15f);
+
+            bool originalAndroidEnabled = manager.androidEnabled;
+            string originalAndroidGameID = manager.androidGameID;
+            string originalAndroidSDKKey = manager.androidSDKKey;
+
+            bool originalIOSEnabled = manager.iosEnabled;
+            string originalIOSGameID = manager.iosGameID;
+            string originalIOSSDKKey = manager.iosSDKKey;
+
+            bool originalWebEnabled = manager.webEnabled;
+            string originalWebGameID = manager.webGameID;
+            string originalWebSDKKey = manager.webSDKKey;
 
             if (!manager.androidEnabled)
             {
@@ -57,6 +72,7 @@ namespace ByteBrewSDK
                     manager.androidGameID = "";
                     manager.androidSDKKey = "";
                     manager.androidEnabled = false;
+                    ByteBrewOnLoadPackageImportCredsHolder.RemoveAndroidPrefs();
                 }
                 GUILayout.FlexibleSpace();
                 GUILayout.EndHorizontal();
@@ -98,11 +114,49 @@ namespace ByteBrewSDK
                     manager.iosGameID = "";
                     manager.iosSDKKey = "";
                     manager.iosEnabled = false;
+                    ByteBrewOnLoadPackageImportCredsHolder.RemoveIOSPrefs();
                 }
                 GUILayout.FlexibleSpace();
                 GUILayout.EndHorizontal();
                 GUILayout.EndVertical();
             }
+
+            GUILayout.Space(15f);
+
+            if (!manager.webEnabled) {
+                GUILayout.BeginVertical();
+                GUILayout.BeginHorizontal();
+                GUILayout.FlexibleSpace();
+                if (GUILayout.Button("Enable Web Settings", GUILayout.Width(300f))) {
+                    manager.webEnabled = true;
+                }
+                GUILayout.FlexibleSpace();
+                GUILayout.EndHorizontal();
+                GUILayout.EndVertical();
+            } else {
+                GUILayout.Label("Web Settings", EditorStyles.centeredGreyMiniLabel);
+                GUILayout.Space(5f);
+                GUILayout.Label("Web Game ID");
+                manager.webGameID = GUILayout.TextField(manager.webGameID, GUILayout.Width(250f));
+                GUILayout.Space(10f);
+                GUILayout.Label("Web Game SDK Key");
+                manager.webSDKKey = GUILayout.TextField(manager.webSDKKey, GUILayout.Width(250f));
+
+                GUILayout.Space(5f);
+                GUILayout.BeginVertical();
+                GUILayout.BeginHorizontal();
+                GUILayout.FlexibleSpace();
+                if (GUILayout.Button("Remove Web Settings", GUILayout.Width(300f))) {
+                    manager.webGameID = "";
+                    manager.webSDKKey = "";
+                    manager.webEnabled = false;
+                    ByteBrewOnLoadPackageImportCredsHolder.RemoveWebPrefs();
+                }
+                GUILayout.FlexibleSpace();
+                GUILayout.EndHorizontal();
+                GUILayout.EndVertical();
+            }
+
 
             GUILayout.Space(20f); //2
             GUILayout.Label("ByteBrew Extra Help", EditorStyles.boldLabel);
@@ -134,6 +188,24 @@ namespace ByteBrewSDK
 
             EditorUtility.SetDirty(manager);
             serializedObject.ApplyModifiedProperties();
+
+            if (originalAndroidEnabled != manager.androidEnabled
+                || originalAndroidGameID != manager.androidGameID
+                || originalAndroidSDKKey != manager.androidSDKKey) {
+                ByteBrewOnLoadPackageImportCredsHolder.SetAndroidKeysToPlayerPrefs();
+            }
+
+            if (originalIOSEnabled != manager.iosEnabled
+                || originalIOSGameID != manager.iosGameID
+                || originalIOSSDKKey != manager.iosSDKKey) {
+                ByteBrewOnLoadPackageImportCredsHolder.SetIOSKeysToPlayerPrefs();
+            }
+
+            if (originalWebEnabled != manager.webEnabled
+                || originalWebGameID != manager.webGameID
+                || originalWebSDKKey != manager.webSDKKey) {
+                ByteBrewOnLoadPackageImportCredsHolder.SetWebKeysToPlayerPrefs();
+            }
         }
     }
 

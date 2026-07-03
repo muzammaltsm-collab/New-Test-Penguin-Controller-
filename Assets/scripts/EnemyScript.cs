@@ -63,7 +63,7 @@ public class EnemyScript : MonoBehaviour
         }
         if (IsGamePlayBigBoss || IsFinishEndBoss)
         {
-            BossEnableParticle.SetActive(true);
+            BossEnableParticle.SetActive(false);
         }
 
         col = GetComponent<Collider>();
