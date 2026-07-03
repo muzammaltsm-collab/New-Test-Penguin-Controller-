@@ -41,7 +41,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         Time.timeScale = 1f;
-
+       
         Application.targetFrameRate = Screen.currentResolution.refreshRate;
     }
     public static GameManager GetInstance()
@@ -65,10 +65,14 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 1f;
         Debug.Log("Start");
         UI.FadeScreen.SetActive(true);
-        UI.RetryPanel.SetActive(false);
+        UI.StageClearPanel.SetActive(false);
         _levelManager.PlaynextLevel();
         // reset death flag
         IsPlayerDead = false;
+        if (_levelManager.CurrentLevelNum % 2 == 0)
+        {
+            if (AdsManagerWrapper.Instance != null && AdsManagerWrapper.Instance.IsInterstitialAvailable()) AdsManagerWrapper.Instance.ShowInterstitial();
+        }
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
     public void Retry()
@@ -76,7 +80,7 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 1f;
         Debug.Log("Start");
         UI.FadeScreen.SetActive(true);
-        UI.Levelfailed.SetActive(false);
+        UI.StagefailedPanel.SetActive(false);
         // reset death flag
         IsPlayerDead = false;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
@@ -86,7 +90,7 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 1f;
         
         UI.FadeScreen.SetActive(true);
-        UI.RetryPanel.SetActive(false);
+        UI.StageClearPanel.SetActive(false);
         _levelManager.PlaynextLevel();
         // reset death flag
         IsPlayerDead = false;
@@ -107,7 +111,7 @@ public class GameManager : MonoBehaviour
     {
         UI.GameStartPanel.SetActive(false);
         UI.RetryBtn.SetActive(false);
-        UI.RetryPanel.SetActive(true);
+        UI.StageClearPanel.SetActive(true);
         Invoke(nameof(EnableNoThanksBtn), 5f);
         Time.timeScale = 1f;
     }

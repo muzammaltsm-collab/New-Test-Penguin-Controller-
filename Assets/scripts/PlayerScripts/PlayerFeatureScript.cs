@@ -23,8 +23,7 @@ public class PlayerFeatureScript : MonoBehaviour
     [Header("Add Particle Data!....")]
     public GameObject DiamondCollectParticle;
     [Header("Ragdol!....")]
-    [SerializeField] GameObject Ragdoll;
-    [SerializeField] Rigidbody Ragdoll_Rb;
+   
     [SerializeField] float Ragdoll_UpwardForce;
     [SerializeField] float Ragdoll_ForwardForce;
     Rigidbody player_rb;
@@ -65,9 +64,7 @@ public class PlayerFeatureScript : MonoBehaviour
         }
         GameManager.Instance.PlayerAnimation.m_Animator.gameObject.SetActive(false);
         AmountShow.AmountShowObject.SetActive(false);
-        Ragdoll.SetActive(true);
-        Ragdoll_Rb.AddForce(transform.forward * Ragdoll_ForwardForce, ForceMode.Impulse);
-        Ragdoll_Rb.AddForce(Vector3.up * Ragdoll_UpwardForce, ForceMode.Impulse);
+      
         GameManager.Instance.EnableRetry();
 
     }

@@ -1,12 +1,13 @@
 using System;
 using TMPro;
 using UnityEngine;
-
+using System.Collections;
 public class rewardSystem : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI rewardToShow;
     [SerializeField] private Transform Hand;
     [SerializeField] private Animator handAnim;
+    Coroutine noAdCoroutine;
     int currentGems;
     void Start()
     {
@@ -29,6 +30,7 @@ public class rewardSystem : MonoBehaviour
     }
     public void DoubleDiamondRV()
     {
+        AdsManagerWrapper.Instance.ShowRewardedVideo(GetTheReward, RewardNotAvailable);
     }
     void GetTheReward()
     {
@@ -40,5 +42,10 @@ public class rewardSystem : MonoBehaviour
             GameManager.Instance.RewardAfterRV();
         }
         handAnim.enabled = false;
+    }
+    void RewardNotAvailable()
+    {
+        GameManager.Instance.UI.ShowNoAdText();
+
     }
 }

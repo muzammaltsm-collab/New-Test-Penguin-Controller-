@@ -17968,15 +17968,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4725342958438506, guid: 3d9c7d967c0192a4bb26314c14e52056, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.8360001
+      value: 2.3
       objectReference: {fileID: 0}
     - target: {fileID: 4725342958438506, guid: 3d9c7d967c0192a4bb26314c14e52056, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.8360001
+      value: 2.3
       objectReference: {fileID: 0}
     - target: {fileID: 4725342958438506, guid: 3d9c7d967c0192a4bb26314c14e52056, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.8360001
+      value: 2.3
       objectReference: {fileID: 0}
     - target: {fileID: 4725342958438506, guid: 3d9c7d967c0192a4bb26314c14e52056, type: 3}
       propertyPath: m_LocalPosition.x
@@ -18255,15 +18255,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4299158934565938, guid: 603b7f589d2adc446ae6f20ac3b637b5, type: 3}
       propertyPath: m_LocalScale.x
-      value: 2.346
+      value: 2.3
       objectReference: {fileID: 0}
     - target: {fileID: 4299158934565938, guid: 603b7f589d2adc446ae6f20ac3b637b5, type: 3}
       propertyPath: m_LocalScale.y
-      value: 2.3460002
+      value: 2.3
       objectReference: {fileID: 0}
     - target: {fileID: 4299158934565938, guid: 603b7f589d2adc446ae6f20ac3b637b5, type: 3}
       propertyPath: m_LocalScale.z
-      value: 2.346
+      value: 2.3
       objectReference: {fileID: 0}
     - target: {fileID: 4299158934565938, guid: 603b7f589d2adc446ae6f20ac3b637b5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -18318,6 +18318,21 @@ PrefabInstance:
         type: 3}
       propertyPath: InitialModule.maxNumParticles
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 198721687081955114, guid: 603b7f589d2adc446ae6f20ac3b637b5,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0.0627451
+      objectReference: {fileID: 0}
+    - target: {fileID: 198721687081955114, guid: 603b7f589d2adc446ae6f20ac3b637b5,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0.65882355
+      objectReference: {fileID: 0}
+    - target: {fileID: 198721687081955114, guid: 603b7f589d2adc446ae6f20ac3b637b5,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0.8196079
       objectReference: {fileID: 0}
     - target: {fileID: 198864301312825912, guid: 603b7f589d2adc446ae6f20ac3b637b5,
         type: 3}

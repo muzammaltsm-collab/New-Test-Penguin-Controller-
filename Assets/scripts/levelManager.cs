@@ -11,7 +11,10 @@ public class levelManager : MonoBehaviour
     {
         CurrentLevelNum = PlayerPrefs.GetInt("CurrentLevel", 0);
         int levelIndex;
-
+        if (CurrentLevelNum % 6 == 0)
+        {
+            if (AdsManagerWrapper.Instance != null && AdsManagerWrapper.Instance.IsInterstitialAvailable()) AdsManagerWrapper.Instance.ShowInterstitial();
+        }
         if (CurrentLevelNum < _level.levels.Count)
         {
             // Normal order

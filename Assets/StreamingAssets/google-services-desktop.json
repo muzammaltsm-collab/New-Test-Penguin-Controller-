@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "343733990091",
+    "project_id": "lostpenguinrescuequest",
+    "storage_bucket": "lostpenguinrescuequest.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:343733990091:android:0e684a698b44ff2351e14e",
+        "android_client_info": {
+          "package_name": "com.tsmgames.lostpenguinquest"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADYhNjUKoT9bvYEkmitxQib003yiUWxNI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
